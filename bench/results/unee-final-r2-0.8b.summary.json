@@ -1,0 +1,35 @@
+{
+ "name": "unee-final-r2-0.8b",
+ "model": "models/soup4r/merged",
+ "device": "cuda",
+ "dtype": "bfloat16",
+ "threads": null,
+ "cpu": "Intel64 Family 6 Model 170 Stepping 4, GenuineIntel",
+ "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+ "zero_shot": false,
+ "format": "compact",
+ "temperature": 1.0,
+ "n": 400,
+ "acc": 0.8275,
+ "ci": [
+  0.7925,
+  0.8625
+ ],
+ "pair_acc": 0.67,
+ "ece": 0.051882229223847345,
+ "brier": 0.25848890571873284,
+ "p50_ms": 109.6426000003703,
+ "p95_ms": 146.38628498651084,
+ "avg_in_tokens": 530.5325,
+ "top_token_is_option_letter": 1.0,
+ "by_family": {
+  "action_review": 0.72,
+  "agent_routing": 0.82,
+  "claim_support": 0.78,
+  "content_moderation": 0.78,
+  "returns_policy": 0.78,
+  "review_sentiment": 0.84,
+  "support_intent": 1.0,
+  "ticket_triage": 0.9
+ }
+}

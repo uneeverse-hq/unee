@@ -1,0 +1,31 @@
+{
+ "name": "unee-u3-0.8b-q4km-cuda-c4",
+ "server": "http://127.0.0.1:8030/v1",
+ "concurrency": 4,
+ "zero_shot": false,
+ "format": "compact",
+ "orders": 1,
+ "n": 400,
+ "acc": 0.83,
+ "ci": [
+  0.7925,
+  0.8675
+ ],
+ "pair_acc": 0.685,
+ "ece": 0.03447440557720915,
+ "brier": 0.2689281938502829,
+ "p50_ms": 356.6689500003122,
+ "p95_ms": 543.9541499916231,
+ "avg_in_tokens": 530.5325,
+ "top_token_is_option_letter": 1.0,
+ "by_family": {
+  "action_review": 0.76,
+  "agent_routing": 0.88,
+  "claim_support": 0.82,
+  "content_moderation": 0.76,
+  "returns_policy": 0.76,
+  "review_sentiment": 0.8,
+  "support_intent": 1.0,
+  "ticket_triage": 0.86
+ }
+}

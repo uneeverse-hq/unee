@@ -1,0 +1,15 @@
+Unee
+Copyright 2026 Muneef Mumthas / UNEEVERSE (https://uneeverse.net/unee)
+
+This product includes software and model weights created by Muneef Mumthas at UNEEVERSE, licensed under the
+Apache License, Version 2.0. Under section 4(d) of the License, redistributions must keep this NOTICE file.
+
+If you build something with Unee, please credit it as "Unee by UNEEVERSE" where your users can see it.
+
+Third-party components:
+- The Unee models are fine-tuned from Qwen3.5 by the Qwen team (Alibaba Cloud), licensed under the Apache
+  License, Version 2.0.
+- Training data was written and labelled by Qwen3.5-9B (Apache License, Version 2.0). Chat prompts include
+  OpenAssistant oasst1 (Apache License, Version 2.0).
+- No DecideBench, JevBench, S1MB or MASSIVE data was used for training; those benchmarks are used for evaluation
+  only.

@@ -1,0 +1,40 @@
+{
+ "name": "unee-u3-2b-cuda",
+ "url": "http://127.0.0.1:8030/v1",
+ "few_shot_c1": {
+  "n": 60,
+  "p50_ms": 111.2,
+  "p95_ms": 123.0,
+  "throughput_per_s": 9.3
+ },
+ "few_shot_c4": {
+  "n": 60,
+  "p50_ms": 405.4,
+  "p95_ms": 449.5,
+  "throughput_per_s": 10.0
+ },
+ "repeat_c1": {
+  "n": 50,
+  "p50_ms": 88.2,
+  "p95_ms": 93.0,
+  "throughput_per_s": 11.3
+ },
+ "repeat_c4": {
+  "n": 50,
+  "p50_ms": 397.6,
+  "p95_ms": 418.0,
+  "throughput_per_s": 10.0
+ },
+ "zero_shot_c1": {
+  "n": 60,
+  "p50_ms": 71.3,
+  "p95_ms": 98.1,
+  "throughput_per_s": 13.0
+ },
+ "zero_shot_c4": {
+  "n": 60,
+  "p50_ms": 265.8,
+  "p95_ms": 311.6,
+  "throughput_per_s": 14.6
+ }
+}

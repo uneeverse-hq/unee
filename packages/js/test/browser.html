@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unee browser test</title>
+<script type="importmap">
+{ "imports": { "@huggingface/transformers": "https://cdn.jsdelivr.net/npm/@huggingface/transformers@4.3.0" } }
+</script>
+<style>body { font: 14px/1.5 system-ui, sans-serif; margin: 16px; } pre { white-space: pre-wrap; background: #f4f4f4; padding: 8px; }</style>
+</head>
+<body>
+<h1>Unee browser test</h1>
+<p>Serve the repo root over HTTP and open <code>/packages/js/test/browser.html?model=onnx-base</code>.</p>
+<pre id="log">loading…</pre>
+<script type="module">
+import { env } from "@huggingface/transformers";
+import { Unee } from "../src/index.js";
+
+const log = (s) => { document.getElementById("log").textContent += "\n" + s; window.__log = (window.__log || "") + s + "\n"; };
+const params = new URLSearchParams(location.search);
+env.allowLocalModels = true;
+env.allowRemoteModels = false;
+env.localModelPath = new URL("../../../models/", location.href).pathname; // must be a path, not an http(s) URL
+const device = params.get("device") || ("gpu" in navigator ? "webgpu" : "wasm");
+try {
+  const t0 = performance.now();
+  const unee = await Unee.load(params.get("model") || "onnx-base", { device });
+  log(`loaded on ${device} in ${Math.round(performance.now() - t0)} ms`);
+  window.__unee = unee;
+  if (params.get("stop")) throw new Error("stopped after load");
+  const req = {
+    state: { name: "Managed Postgres", description: "PostgreSQL hosting product, wants to sponsor our newsletter in October" },
+    questions: {
+      is_sponsor_inquiry: { type: "noul", instructions: "Does `description` ask to sponsor something?" },
+      product_category: { type: "choice", instructions: "What product type is this?", explain: true,
+        criteria: { dev_tool: "Developer tools, hosting, APIs", course: "Training and courses", unrelated: "Not for developers" } },
+      message_quality: { type: "score", instructions: "How specific is the message?",
+        criteria: ["Generic template", "Mentions site, no ask", "Concrete ask with timeframe"] },
+    },
+  };
+  for (let i = 0; i < 2; i++) {
+    const res = await unee.decide(req);
+    log(`decide #${i + 1}: ` + JSON.stringify(res));
+  }
+  let text = "";
+  const t1 = performance.now();
+  let n = 0;
+  for await (const piece of unee.stream([{ role: "user", content: "Write one sentence about tea." }], { max_new_tokens: 40, temperature: 0 })) { text += piece; n++; }
+  log(`stream (${n} pieces, ${Math.round(performance.now() - t1)} ms): ${text}`);
+  log("DONE");
+} catch (e) {
+  log("ERROR: " + (e && e.stack || e));
+}
+</script>
+</body>
+</html>

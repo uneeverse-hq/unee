@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unee</title>
+<meta name="description" content="A small open decision model that runs entirely in your browser. No server, no API key.">
+<script type="importmap">
+{ "imports": { "@huggingface/transformers": "https://cdn.jsdelivr.net/npm/@huggingface/transformers@4.3.0" } }
+</script>
+<style>
+  :root {
+    --bg: #fbfaf7; --panel: #ffffff; --ink: #1d1d1b; --muted: #6b6a66; --line: #e6e3dc;
+    --accent: #2f6f4f; --accent-soft: #e3efe8; --bar: #2f6f4f; --bar-bg: #ecebe6; --warn: #9a5b13;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #151614; --panel: #1d1f1c; --ink: #ecebe6; --muted: #a3a29c; --line: #30332e;
+      --accent: #7cc39b; --accent-soft: #233229; --bar: #7cc39b; --bar-bg: #2a2d28; --warn: #e0a35a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.55 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 980px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 28px; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .lede { color: var(--muted); margin: 0 0 20px; }
+  .status { display: flex; gap: 10px; align-items: center; font-size: 13px; color: var(--muted); margin-bottom: 20px; flex-wrap: wrap; }
+  .pill { padding: 2px 10px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px; min-width: 0; }
+  label { display: block; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 10px 0 4px; }
+  textarea, input, select { width: 100%; font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; }
+  textarea { min-height: 96px; resize: vertical; }
+  .row { display: flex; gap: 8px; }
+  .row > * { flex: 1; }
+  button { font: inherit; font-weight: 600; border: 0; border-radius: 8px; padding: 10px 14px; background: var(--accent); color: var(--bg); cursor: pointer; }
+  button:disabled { opacity: .5; cursor: progress; }
+  button.ghost { background: transparent; color: var(--accent); border: 1px solid var(--line); }
+  .examples { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
+  .examples button { padding: 6px 10px; font-weight: 500; font-size: 13px; }
+  .opt { display: grid; grid-template-columns: minmax(80px, 30%) 1fr 52px; gap: 10px; align-items: center; margin: 8px 0; font-size: 14px; }
+  .opt .name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .opt.win .name { font-weight: 700; }
+  .bar { height: 10px; background: var(--bar-bg); border-radius: 999px; overflow: hidden; }
+  .bar span { display: block; height: 100%; background: var(--bar); border-radius: 999px; transition: width .3s; }
+  .pct { text-align: right; font-variant-numeric: tabular-nums; color: var(--muted); }
+  .why { margin-top: 12px; padding: 10px 12px; border-left: 3px solid var(--accent); background: var(--accent-soft); border-radius: 0 8px 8px 0; min-height: 1.5em; }
+  .meta { font-size: 12px; color: var(--muted); margin-top: 10px; }
+  .chat { margin-top: 16px; }
+  .chat .out { white-space: pre-wrap; min-height: 3em; margin-top: 10px; }
+  .err { color: var(--warn); }
+  footer { margin-top: 28px; font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Unee</h1>
+  <p class="lede">A small open decision model running entirely in this tab. It picks an option with a probability for each one, and can stream the reason. Nothing leaves your device.</p>
+  <div class="status"><span class="pill" id="device">loading</span><span id="load">Downloading the model (about 450 MB, cached after the first visit)…</span></div>
+
+  <div class="grid">
+    <section class="card">
+      <div class="examples" id="examples"></div>
+      <label for="state">Input</label>
+      <textarea id="state"></textarea>
+      <label for="question">Question</label>
+      <input id="question">
+      <label for="options">Options, one per line as <code>key: when it applies</code></label>
+      <textarea id="options"></textarea>
+      <div class="row" style="margin-top:12px">
+        <button id="decide" disabled>Decide</button>
+        <button id="explain" class="ghost" disabled>Decide and explain</button>
+      </div>
+    </section>
+    <section class="card" aria-live="polite">
+      <div id="result"><p class="meta">Results show up here.</p></div>
+      <div class="why" id="why" hidden></div>
+      <div class="meta" id="timing"></div>
+    </section>
+  </div>
+
+  <section class="card chat">
+    <label for="prompt">Or just chat (streams token by token)</label>
+    <div class="row"><input id="prompt" value="Explain in two sentences why on-device AI matters."><button id="send" disabled style="flex:0 0 auto">Send</button></div>
+    <div class="out" id="chat"></div>
+  </section>
+  <footer>Apache-2.0 · Runs on transformers.js with WebGPU, entirely on your device.</footer>
+</main>
+
+<script type="module">
+import { env } from "@huggingface/transformers";
+import { Unee } from "../packages/js/src/index.js";
+
+const $ = (id) => document.getElementById(id);
+const params = new URLSearchParams(location.search);
+const MODEL = params.get("model") || "onnx-base";
+if (params.get("local") !== "0") {
+  env.allowLocalModels = true;
+  env.localModelPath = new URL("../models/", location.href).pathname;
+}
+
+const EXAMPLES = [
+  { name: "Support ticket", state: "Hi, I was charged twice for order #4821 this morning. Please send the extra $39 back to my card.",
+    question: "Which team should handle this ticket?",
+    options: "billing: Charges, invoices, refunds and payment problems\ntechnical: Bugs, outages and login problems\nshipping: Delivery status and lost parcels\nother: Anything else" },
+  { name: "Agent action", state: "Agent: ops-copilot. Target: production database. Proposed: `DELETE FROM users WHERE last_login < '2020-01-01'`. Context: the user asked to tidy up old test accounts.",
+    question: "How should this proposed agent action be handled?",
+    options: "auto_approve: Read-only or easily reversible actions\nrequire_human_review: Writes that can be undone but affect real data\nblock: Destructive or irreversible actions on production" },
+  { name: "Review", state: "The battery lasts two full days and the screen is gorgeous, but the speaker crackles at any volume above half.",
+    question: "What is the reviewer's overall sentiment?",
+    options: "negative: Mostly unhappy\nmixed: Real positives and real negatives\npositive: Mostly happy" },
+];
+
+function load(ex) { $("state").value = ex.state; $("question").value = ex.question; $("options").value = ex.options; }
+for (const ex of EXAMPLES) {
+  const b = document.createElement("button");
+  b.className = "ghost"; b.textContent = ex.name; b.onclick = () => load(ex);
+  $("examples").append(b);
+}
+load(EXAMPLES[0]);
+
+function parseOptions(text) {
+  const criteria = {};
+  for (const line of text.split("\n")) {
+    const i = line.indexOf(":");
+    if (i > 0) criteria[line.slice(0, i).trim()] = line.slice(i + 1).trim();
+  }
+  return criteria;
+}
+
+function render(ans) {
+  const entries = Object.entries(ans.probabilities).sort((a, b) => b[1] - a[1]);
+  $("result").innerHTML = "";
+  for (const [k, p] of entries) {
+    const row = document.createElement("div");
+    row.className = "opt" + (k === ans.choice ? " win" : "");
+    row.innerHTML = `<div class="name"></div><div class="bar"><span style="width:${(p * 100).toFixed(1)}%"></span></div><div class="pct">${(p * 100).toFixed(1)}%</div>`;
+    row.querySelector(".name").textContent = k;
+    $("result").append(row);
+  }
+}
+
+let unee;
+const adapter = "gpu" in navigator ? await navigator.gpu.requestAdapter().catch(() => null) : null;
+if (!adapter) {
+  $("device").textContent = "no WebGPU";
+  $("load").innerHTML = `<span class="err">This demo needs WebGPU: a recent Chrome, Edge, Safari 26+ or Firefox 141+.</span>`;
+} else {
+  try {
+    const t0 = performance.now();
+    unee = await Unee.load(MODEL, { device: "webgpu" });
+    $("device").textContent = "WebGPU";
+    $("load").textContent = `Ready in ${((performance.now() - t0) / 1000).toFixed(1)} s`;
+    for (const id of ["decide", "explain", "send"]) $(id).disabled = false;
+  } catch (e) {
+    $("device").textContent = "error";
+    $("load").textContent = `Could not load the model: ${String(e.message || e)}`;
+    $("load").className = "err";
+  }
+}
+
+async function decide(explain) {
+  for (const id of ["decide", "explain"]) $(id).disabled = true;
+  $("why").hidden = !explain; $("why").textContent = "";
+  try {
+    const criteria = parseOptions($("options").value);
+    const body = { state: $("state").value, questions: { q: { type: "choice", instructions: $("question").value, criteria } } };
+    const t0 = performance.now();
+    const res = await unee.decide(body);
+    const ans = res.answers.q;
+    render(ans);
+    $("timing").textContent = `Decision in ${Math.round(performance.now() - t0)} ms on ${$("device").textContent}`;
+    if (explain) {
+      const { tasks, state } = (await import("../packages/js/src/systemone.js")).parse(body);
+      await unee.reason(state, tasks[0], ans.choice, (piece) => { $("why").textContent += piece; });
+    }
+  } catch (e) {
+    $("result").innerHTML = `<p class="err">${String(e.message || e)}</p>`;
+  } finally {
+    for (const id of ["decide", "explain"]) $(id).disabled = false;
+  }
+}
+$("decide").onclick = () => decide(false);
+$("explain").onclick = () => decide(true);
+$("send").onclick = async () => {
+  $("send").disabled = true; $("chat").textContent = "";
+  try {
+    for await (const piece of unee.stream([{ role: "user", content: $("prompt").value }], { max_new_tokens: 200 })) $("chat").textContent += piece;
+  } finally { $("send").disabled = false; }
+};
+</script>
+</body>
+</html>

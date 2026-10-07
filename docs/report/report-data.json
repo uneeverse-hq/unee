@@ -1,0 +1,1449 @@
+{
+ "version": "0.3",
+ "decidebench": {
+  "board": [
+   {
+    "name": "DeepSeek-V4-Flash (Together)",
+    "accuracy": 99.8,
+    "pair": 99.5,
+    "cost_per_m": 197.28,
+    "latency_ms": 1866.0,
+    "hosted": true,
+    "params_b": null
+   },
+   {
+    "name": "DeepSeek-V4.1-Flash (Together)",
+    "accuracy": 99.2,
+    "pair": 98.5,
+    "cost_per_m": 455.09,
+    "latency_ms": 356.0,
+    "hosted": true,
+    "params_b": null
+   },
+   {
+    "name": "GLM-5.3-Flash (Together)",
+    "accuracy": 99.2,
+    "pair": 98.5,
+    "cost_per_m": 192.19,
+    "latency_ms": 665.0,
+    "hosted": true,
+    "params_b": null
+   },
+   {
+    "name": "JEV (AI Space)",
+    "accuracy": 98.0,
+    "pair": 96.0,
+    "cost_per_m": 32.26,
+    "latency_ms": 639.0,
+    "hosted": true,
+    "params_b": null
+   },
+   {
+    "name": "imajev-4b (self-hosted)",
+    "accuracy": 95.0,
+    "pair": 90.5,
+    "cost_per_m": 28.57,
+    "latency_ms": 499.0,
+    "hosted": false,
+    "params_b": 4.0
+   },
+   {
+    "name": "Clef 27B (AI Space)",
+    "accuracy": 94.8,
+    "pair": 89.5,
+    "cost_per_m": 130.85,
+    "latency_ms": 811.0,
+    "hosted": true,
+    "params_b": 27.0
+   },
+   {
+    "name": "Bespoke-Nimble-9B (self-hosted)",
+    "accuracy": 94.0,
+    "pair": 88.0,
+    "cost_per_m": 65.3,
+    "latency_ms": 1116.0,
+    "hosted": false,
+    "params_b": 9.0
+   },
+   {
+    "name": "TEV (self-hosted)",
+    "accuracy": 92.8,
+    "pair": 86.0,
+    "cost_per_m": 46.82,
+    "latency_ms": 823.0,
+    "hosted": false,
+    "params_b": null
+   },
+   {
+    "name": "TEV (Together)",
+    "accuracy": 92.8,
+    "pair": 86.0,
+    "cost_per_m": 50.2,
+    "latency_ms": 197.0,
+    "hosted": true,
+    "params_b": null
+   },
+   {
+    "name": "Qwen3-8B, no thinking (self-hosted)",
+    "accuracy": 90.5,
+    "pair": 81.5,
+    "cost_per_m": 49.05,
+    "latency_ms": 856.0,
+    "hosted": false,
+    "params_b": 8.0
+   },
+   {
+    "name": "JevK5 v0.3 (self-hosted)",
+    "accuracy": 88.8,
+    "pair": 78.5,
+    "cost_per_m": 31.74,
+    "latency_ms": 568.0,
+    "hosted": false,
+    "params_b": null
+   },
+   {
+    "name": "Decider-4B (self-hosted)",
+    "accuracy": 88.5,
+    "pair": 78.5,
+    "cost_per_m": 29.79,
+    "latency_ms": 525.0,
+    "hosted": false,
+    "params_b": 4.0
+   },
+   {
+    "name": "Clef-Flash 9B (AI Space)",
+    "accuracy": 85.8,
+    "pair": 73.0,
+    "cost_per_m": 49.07,
+    "latency_ms": 695.0,
+    "hosted": true,
+    "params_b": 9.0
+   },
+   {
+    "name": "Jeff Gemma4-E2B (self-hosted)",
+    "accuracy": 80.8,
+    "pair": 64.5,
+    "cost_per_m": 16.49,
+    "latency_ms": 76.0,
+    "hosted": false,
+    "params_b": null
+   },
+   {
+    "name": "Kev-4B (self-hosted)",
+    "accuracy": 78.2,
+    "pair": 65.5,
+    "cost_per_m": 26.91,
+    "latency_ms": 437.0,
+    "hosted": false,
+    "params_b": 4.0
+   },
+   {
+    "name": "Kev-9B (self-hosted)",
+    "accuracy": 72.8,
+    "pair": 53.5,
+    "cost_per_m": 50.91,
+    "latency_ms": 877.0,
+    "hosted": false,
+    "params_b": 9.0
+   },
+   {
+    "name": "Jeff Qwen3.5-0.8B (self-hosted)",
+    "accuracy": 71.2,
+    "pair": 49.5,
+    "cost_per_m": 9.84,
+    "latency_ms": 43.0,
+    "hosted": false,
+    "params_b": 0.8
+   },
+   {
+    "name": "Jeff Qwen3.5-2B (self-hosted)",
+    "accuracy": 70.0,
+    "pair": 48.5,
+    "cost_per_m": 12.39,
+    "latency_ms": 52.0,
+    "hosted": false,
+    "params_b": 2.0
+   },
+   {
+    "name": "Decider-2B (self-hosted)",
+    "accuracy": 63.2,
+    "pair": 41.0,
+    "cost_per_m": 12.6,
+    "latency_ms": 220.0,
+    "hosted": false,
+    "params_b": 2.0
+   },
+   {
+    "name": "Qwen2-1.5B, Arize (Together)",
+    "accuracy": 60.2,
+    "pair": 35.5,
+    "cost_per_m": 119.51,
+    "latency_ms": 320.0,
+    "hosted": true,
+    "params_b": 1.5
+   },
+   {
+    "name": "Laya typed-decisions 421M (self-hosted)",
+    "accuracy": 59.8,
+    "pair": 36.5,
+    "cost_per_m": 5.45,
+    "latency_ms": 97.0,
+    "hosted": false,
+    "params_b": 0.421
+   },
+   {
+    "name": "GLiNER2.5-Decide 340M (self-hosted)",
+    "accuracy": 57.0,
+    "pair": 30.5,
+    "cost_per_m": 14.96,
+    "latency_ms": 255.0,
+    "hosted": false,
+    "params_b": 0.34
+   },
+   {
+    "name": "CLM-v0.1-8B (self-hosted)",
+    "accuracy": 41.0,
+    "pair": 11.0,
+    "cost_per_m": 10.46,
+    "latency_ms": 156.0,
+    "hosted": false,
+    "params_b": 8.0
+   },
+   {
+    "name": "Julia-1 144M (self-hosted)",
+    "accuracy": 34.8,
+    "pair": 8.0,
+    "cost_per_m": 3.31,
+    "latency_ms": 58.0,
+    "hosted": false,
+    "params_b": 0.144
+   }
+  ],
+  "families": {
+   "DeepSeek-V4-Flash (Together)": {
+    "action_review": 100.0,
+    "agent_routing": 100.0,
+    "claim_support": 100.0,
+    "content_moderation": 100.0,
+    "returns_policy": 100.0,
+    "review_sentiment": 100.0,
+    "support_intent": 100.0,
+    "ticket_triage": 98.0
+   },
+   "DeepSeek-V4.1-Flash (Together)": {
+    "action_review": 98.0,
+    "agent_routing": 98.0,
+    "claim_support": 100.0,
+    "content_moderation": 100.0,
+    "returns_policy": 100.0,
+    "review_sentiment": 98.0,
+    "support_intent": 100.0,
+    "ticket_triage": 100.0
+   },
+   "GLM-5.3-Flash (Together)": {
+    "action_review": 98.0,
+    "agent_routing": 98.0,
+    "claim_support": 100.0,
+    "content_moderation": 98.0,
+    "returns_policy": 100.0,
+    "review_sentiment": 100.0,
+    "support_intent": 100.0,
+    "ticket_triage": 100.0
+   },
+   "JEV (AI Space)": {
+    "action_review": 100.0,
+    "agent_routing": 98.0,
+    "claim_support": 96.0,
+    "content_moderation": 98.0,
+    "returns_policy": 96.0,
+    "review_sentiment": 98.0,
+    "support_intent": 100.0,
+    "ticket_triage": 98.0
+   },
+   "imajev-4b (self-hosted)": {
+    "action_review": 96.0,
+    "agent_routing": 100.0,
+    "claim_support": 94.0,
+    "content_moderation": 90.0,
+    "returns_policy": 90.0,
+    "review_sentiment": 92.0,
+    "support_intent": 100.0,
+    "ticket_triage": 98.0
+   },
+   "Clef 27B (AI Space)": {
+    "action_review": 98.0,
+    "agent_routing": 100.0,
+    "claim_support": 96.0,
+    "content_moderation": 92.0,
+    "returns_policy": 88.0,
+    "review_sentiment": 92.0,
+    "support_intent": 98.0,
+    "ticket_triage": 94.0
+   },
+   "Bespoke-Nimble-9B (self-hosted)": {
+    "action_review": 90.0,
+    "agent_routing": 94.0,
+    "claim_support": 94.0,
+    "content_moderation": 92.0,
+    "returns_policy": 90.0,
+    "review_sentiment": 94.0,
+    "support_intent": 100.0,
+    "ticket_triage": 98.0
+   },
+   "TEV (self-hosted)": {
+    "action_review": 86.0,
+    "agent_routing": 100.0,
+    "claim_support": 90.0,
+    "content_moderation": 90.0,
+    "returns_policy": 90.0,
+    "review_sentiment": 92.0,
+    "support_intent": 100.0,
+    "ticket_triage": 94.0
+   },
+   "TEV (Together)": {
+    "action_review": 86.0,
+    "agent_routing": 100.0,
+    "claim_support": 90.0,
+    "content_moderation": 90.0,
+    "returns_policy": 90.0,
+    "review_sentiment": 92.0,
+    "support_intent": 100.0,
+    "ticket_triage": 94.0
+   },
+   "Qwen3-8B, no thinking (self-hosted)": {
+    "action_review": 78.0,
+    "agent_routing": 100.0,
+    "claim_support": 90.0,
+    "content_moderation": 86.0,
+    "returns_policy": 84.0,
+    "review_sentiment": 94.0,
+    "support_intent": 100.0,
+    "ticket_triage": 92.0
+   },
+   "JevK5 v0.3 (self-hosted)": {
+    "action_review": 72.0,
+    "agent_routing": 96.0,
+    "claim_support": 92.0,
+    "content_moderation": 82.0,
+    "returns_policy": 90.0,
+    "review_sentiment": 84.0,
+    "support_intent": 100.0,
+    "ticket_triage": 94.0
+   },
+   "Decider-4B (self-hosted)": {
+    "action_review": 82.0,
+    "agent_routing": 96.0,
+    "claim_support": 90.0,
+    "content_moderation": 86.0,
+    "returns_policy": 82.0,
+    "review_sentiment": 88.0,
+    "support_intent": 98.0,
+    "ticket_triage": 86.0
+   },
+   "Clef-Flash 9B (AI Space)": {
+    "action_review": 90.0,
+    "agent_routing": 92.0,
+    "claim_support": 66.0,
+    "content_moderation": 86.0,
+    "returns_policy": 76.0,
+    "review_sentiment": 92.0,
+    "support_intent": 94.0,
+    "ticket_triage": 90.0
+   },
+   "Jeff Gemma4-E2B (self-hosted)": {
+    "action_review": 82.0,
+    "agent_routing": 88.0,
+    "claim_support": 80.0,
+    "content_moderation": 72.0,
+    "returns_policy": 58.0,
+    "review_sentiment": 86.0,
+    "support_intent": 100.0,
+    "ticket_triage": 80.0
+   },
+   "Kev-4B (self-hosted)": {
+    "action_review": 76.0,
+    "agent_routing": 94.0,
+    "claim_support": 40.0,
+    "content_moderation": 88.0,
+    "returns_policy": 46.0,
+    "review_sentiment": 90.0,
+    "support_intent": 100.0,
+    "ticket_triage": 92.0
+   },
+   "Kev-9B (self-hosted)": {
+    "action_review": 82.0,
+    "agent_routing": 70.0,
+    "claim_support": 44.0,
+    "content_moderation": 76.0,
+    "returns_policy": 58.0,
+    "review_sentiment": 92.0,
+    "support_intent": 94.0,
+    "ticket_triage": 66.0
+   },
+   "Jeff Qwen3.5-0.8B (self-hosted)": {
+    "action_review": 54.0,
+    "agent_routing": 78.0,
+    "claim_support": 82.0,
+    "content_moderation": 70.0,
+    "returns_policy": 48.0,
+    "review_sentiment": 68.0,
+    "support_intent": 84.0,
+    "ticket_triage": 86.0
+   },
+   "Jeff Qwen3.5-2B (self-hosted)": {
+    "action_review": 64.0,
+    "agent_routing": 86.0,
+    "claim_support": 44.0,
+    "content_moderation": 60.0,
+    "returns_policy": 46.0,
+    "review_sentiment": 76.0,
+    "support_intent": 98.0,
+    "ticket_triage": 86.0
+   },
+   "Decider-2B (self-hosted)": {
+    "action_review": 56.0,
+    "agent_routing": 66.0,
+    "claim_support": 42.0,
+    "content_moderation": 66.0,
+    "returns_policy": 46.0,
+    "review_sentiment": 70.0,
+    "support_intent": 96.0,
+    "ticket_triage": 64.0
+   },
+   "Qwen2-1.5B, Arize (Together)": {
+    "action_review": 42.0,
+    "agent_routing": 80.0,
+    "claim_support": 44.0,
+    "content_moderation": 54.0,
+    "returns_policy": 46.0,
+    "review_sentiment": 50.0,
+    "support_intent": 94.0,
+    "ticket_triage": 72.0
+   },
+   "Laya typed-decisions 421M (self-hosted)": {
+    "action_review": 28.0,
+    "agent_routing": 52.0,
+    "claim_support": 76.0,
+    "content_moderation": 52.0,
+    "returns_policy": 50.0,
+    "review_sentiment": 72.0,
+    "support_intent": 90.0,
+    "ticket_triage": 58.0
+   },
+   "GLiNER2.5-Decide 340M (self-hosted)": {
+    "action_review": 42.0,
+    "agent_routing": 72.0,
+    "claim_support": 52.0,
+    "content_moderation": 28.0,
+    "returns_policy": 38.0,
+    "review_sentiment": 84.0,
+    "support_intent": 88.0,
+    "ticket_triage": 52.0
+   },
+   "CLM-v0.1-8B (self-hosted)": {
+    "action_review": 50.0,
+    "agent_routing": 34.0,
+    "claim_support": 44.0,
+    "content_moderation": 22.0,
+    "returns_policy": 46.0,
+    "review_sentiment": 44.0,
+    "support_intent": 46.0,
+    "ticket_triage": 42.0
+   },
+   "Julia-1 144M (self-hosted)": {
+    "action_review": 38.0,
+    "agent_routing": 40.0,
+    "claim_support": 24.0,
+    "content_moderation": 38.0,
+    "returns_policy": 28.0,
+    "review_sentiment": 22.0,
+    "support_intent": 54.0,
+    "ticket_triage": 34.0
+   }
+  },
+  "unee": [
+   {
+    "name": "Unee 0.8B",
+    "params_b": 0.75,
+    "accuracy": 84.0,
+    "pair": 70.0,
+    "ece": 0.025,
+    "families": {
+     "action_review": 78.0,
+     "agent_routing": 88.0,
+     "claim_support": 82.0,
+     "content_moderation": 80.0,
+     "returns_policy": 74.0,
+     "review_sentiment": 82.0,
+     "support_intent": 98.0,
+     "ticket_triage": 90.0
+    },
+    "served_accuracy": 83.0,
+    "throughput_per_s": 11.6,
+    "cost_per_m": 19.4,
+    "latency_ms_c1": 95.7,
+    "reliability": [
+     {
+      "confidence": 0.4648,
+      "accuracy": 0.4706,
+      "n": 17
+     },
+     {
+      "confidence": 0.5479,
+      "accuracy": 0.5556,
+      "n": 36
+     },
+     {
+      "confidence": 0.6585,
+      "accuracy": 0.7714,
+      "n": 35
+     },
+     {
+      "confidence": 0.7514,
+      "accuracy": 0.7838,
+      "n": 37
+     },
+     {
+      "confidence": 0.8568,
+      "accuracy": 0.8509,
+      "n": 114
+     },
+     {
+      "confidence": 0.9401,
+      "accuracy": 0.9627,
+      "n": 161
+     }
+    ]
+   },
+   {
+    "name": "Unee 2B",
+    "params_b": 1.9,
+    "accuracy": 88.0,
+    "pair": 76.5,
+    "ece": 0.026,
+    "families": {
+     "action_review": 86.0,
+     "agent_routing": 90.0,
+     "claim_support": 86.0,
+     "content_moderation": 82.0,
+     "returns_policy": 80.0,
+     "review_sentiment": 88.0,
+     "support_intent": 100.0,
+     "ticket_triage": 92.0
+    },
+    "served_accuracy": 87.0,
+    "throughput_per_s": 10.0,
+    "cost_per_m": 22.5,
+    "latency_ms_c1": 111.2,
+    "reliability": [
+     {
+      "confidence": 0.3467,
+      "accuracy": 0.2,
+      "n": 5
+     },
+     {
+      "confidence": 0.4664,
+      "accuracy": 0.4667,
+      "n": 15
+     },
+     {
+      "confidence": 0.5423,
+      "accuracy": 0.5833,
+      "n": 12
+     },
+     {
+      "confidence": 0.6576,
+      "accuracy": 0.7727,
+      "n": 22
+     },
+     {
+      "confidence": 0.7527,
+      "accuracy": 0.7059,
+      "n": 34
+     },
+     {
+      "confidence": 0.8505,
+      "accuracy": 0.8571,
+      "n": 63
+     },
+     {
+      "confidence": 0.9529,
+      "accuracy": 0.9719,
+      "n": 249
+     }
+    ]
+   }
+  ],
+  "l4_hourly": 0.81
+ },
+ "jevbench": {
+  "unee": {
+   "0.8B": {
+    "n": 1682,
+    "overall": 63.9,
+    "choice": 57.5,
+    "noul": 69.0,
+    "score": 69.1
+   },
+   "2B": {
+    "n": 1682,
+    "overall": 70.7,
+    "choice": 63.2,
+    "noul": 80.0,
+    "score": 70.4
+   }
+  },
+  "board": [
+   {
+    "name": "Jev",
+    "overall": 88.8
+   },
+   {
+    "name": "gpt-oss-20b",
+    "overall": 88.4
+   },
+   {
+    "name": "bart-mnli",
+    "overall": 54.3
+   },
+   {
+    "name": "Laya",
+    "overall": 53.9
+   }
+  ],
+  "board_note": "JevBench leaderboard, 232-row gold sample (not the same rows as Unee's 1,682)."
+ },
+ "potato": [
+  {
+   "name": "potato-0.8b-t2",
+   "few_shot_c1": {
+    "n": 20,
+    "p50_ms": 2064.5,
+    "p95_ms": 2240.1,
+    "throughput_per_s": 0.5
+   },
+   "few_shot_c4": {
+    "n": 20,
+    "p50_ms": 8096.7,
+    "p95_ms": 8308.1,
+    "throughput_per_s": 0.5
+   },
+   "zero_shot_c1": {
+    "n": 20,
+    "p50_ms": 998.8,
+    "p95_ms": 1051.0,
+    "throughput_per_s": 1.0
+   }
+  },
+  {
+   "name": "potato-0.8b-t4",
+   "few_shot_c1": {
+    "n": 20,
+    "p50_ms": 1170.3,
+    "p95_ms": 1344.9,
+    "throughput_per_s": 0.9
+   },
+   "few_shot_c4": {
+    "n": 20,
+    "p50_ms": 4876.8,
+    "p95_ms": 5178.5,
+    "throughput_per_s": 0.9
+   },
+   "zero_shot_c1": {
+    "n": 20,
+    "p50_ms": 637.4,
+    "p95_ms": 687.7,
+    "throughput_per_s": 1.6
+   }
+  },
+  {
+   "name": "potato-2b-t2",
+   "few_shot_c1": {
+    "n": 20,
+    "p50_ms": 4499.4,
+    "p95_ms": 4706.5,
+    "throughput_per_s": 0.2
+   },
+   "few_shot_c4": {
+    "n": 20,
+    "p50_ms": 18119.6,
+    "p95_ms": 18478.2,
+    "throughput_per_s": 0.2
+   },
+   "zero_shot_c1": {
+    "n": 20,
+    "p50_ms": 2309.6,
+    "p95_ms": 2403.7,
+    "throughput_per_s": 0.4
+   }
+  },
+  {
+   "name": "potato-2b-t4",
+   "few_shot_c1": {
+    "n": 20,
+    "p50_ms": 2636.6,
+    "p95_ms": 2735.4,
+    "throughput_per_s": 0.4
+   },
+   "few_shot_c4": {
+    "n": 20,
+    "p50_ms": 10550.1,
+    "p95_ms": 10912.4,
+    "throughput_per_s": 0.4
+   },
+   "zero_shot_c1": {
+    "n": 20,
+    "p50_ms": 1401.6,
+    "p95_ms": 1528.7,
+    "throughput_per_s": 0.7
+   }
+  }
+ ],
+ "massive": {
+  "u3-0.8b": {
+   "name": "u3-0.8b",
+   "n": 60,
+   "seed": 0,
+   "per_language": {
+    "af": 0.5833333333333334,
+    "am": 0.2,
+    "ar": 0.5666666666666667,
+    "az": 0.6666666666666666,
+    "bn": 0.6833333333333333,
+    "cy": 0.26666666666666666,
+    "da": 0.6833333333333333,
+    "de": 0.7333333333333333,
+    "el": 0.7,
+    "en": 0.9166666666666666,
+    "es": 0.7833333333333333,
+    "fa": 0.8333333333333334,
+    "fi": 0.5666666666666667,
+    "fr": 0.75,
+    "he": 0.6166666666666667,
+    "hi": 0.7333333333333333,
+    "hu": 0.6166666666666667,
+    "hy": 0.6,
+    "id": 0.8166666666666667,
+    "is": 0.5166666666666667,
+    "it": 0.75,
+    "ja": 0.8,
+    "jv": 0.45,
+    "ka": 0.5,
+    "km": 0.4,
+    "kn": 0.55,
+    "ko": 0.8,
+    "lv": 0.4,
+    "ml": 0.65,
+    "mn": 0.4166666666666667,
+    "ms": 0.7166666666666667,
+    "my": 0.5333333333333333,
+    "nb": 0.65,
+    "nl": 0.7166666666666667,
+    "pl": 0.7666666666666667,
+    "pt": 0.7333333333333333,
+    "ro": 0.6333333333333333,
+    "ru": 0.7833333333333333,
+    "sl": 0.5666666666666667,
+    "sq": 0.5666666666666667,
+    "sv": 0.65,
+    "sw": 0.23333333333333334,
+    "ta": 0.5666666666666667,
+    "te": 0.6166666666666667,
+    "th": 0.6833333333333333,
+    "tl": 0.4,
+    "tr": 0.8,
+    "ur": 0.65,
+    "vi": 0.7,
+    "zh-CN": 0.9,
+    "zh-TW": 0.85
+   },
+   "mean": 0.6326797385620915,
+   "english": 0.9166666666666666,
+   "languages_within_10pt_of_english": 5
+  },
+  "u3-2b": {
+   "name": "u3-2b",
+   "n": 60,
+   "seed": 0,
+   "per_language": {
+    "af": 0.6833333333333333,
+    "am": 0.4,
+    "ar": 0.7166666666666667,
+    "az": 0.7,
+    "bn": 0.6833333333333333,
+    "cy": 0.36666666666666664,
+    "da": 0.7333333333333333,
+    "de": 0.8333333333333334,
+    "el": 0.7166666666666667,
+    "en": 0.8666666666666667,
+    "es": 0.7833333333333333,
+    "fa": 0.8666666666666667,
+    "fi": 0.6333333333333333,
+    "fr": 0.7666666666666667,
+    "he": 0.8,
+    "hi": 0.6833333333333333,
+    "hu": 0.5833333333333334,
+    "hy": 0.65,
+    "id": 0.85,
+    "is": 0.6166666666666667,
+    "it": 0.7666666666666667,
+    "ja": 0.8333333333333334,
+    "jv": 0.4666666666666667,
+    "ka": 0.5666666666666667,
+    "km": 0.55,
+    "kn": 0.7333333333333333,
+    "ko": 0.8,
+    "lv": 0.6,
+    "ml": 0.8166666666666667,
+    "mn": 0.4666666666666667,
+    "ms": 0.7166666666666667,
+    "my": 0.6666666666666666,
+    "nb": 0.7666666666666667,
+    "nl": 0.8166666666666667,
+    "pl": 0.8,
+    "pt": 0.7333333333333333,
+    "ro": 0.7,
+    "ru": 0.7833333333333333,
+    "sl": 0.7,
+    "sq": 0.55,
+    "sv": 0.8,
+    "sw": 0.38333333333333336,
+    "ta": 0.6833333333333333,
+    "te": 0.7666666666666667,
+    "th": 0.7333333333333333,
+    "tl": 0.5666666666666667,
+    "tr": 0.75,
+    "ur": 0.7166666666666667,
+    "vi": 0.7166666666666667,
+    "zh-CN": 0.8833333333333333,
+    "zh-TW": 0.7833333333333333
+   },
+   "mean": 0.6970588235294117,
+   "english": 0.8666666666666667,
+   "languages_within_10pt_of_english": 19
+  },
+  "r3-0.8b": {
+   "name": "r3-0.8b",
+   "n": 60,
+   "seed": 0,
+   "per_language": {
+    "af": 0.5666666666666667,
+    "am": 0.26666666666666666,
+    "ar": 0.5833333333333334,
+    "az": 0.55,
+    "bn": 0.6833333333333333,
+    "cy": 0.26666666666666666,
+    "da": 0.7,
+    "de": 0.7,
+    "el": 0.7166666666666667,
+    "en": 0.8833333333333333,
+    "es": 0.7666666666666667,
+    "fa": 0.7833333333333333,
+    "fi": 0.5166666666666667,
+    "fr": 0.7666666666666667,
+    "he": 0.65,
+    "hi": 0.7333333333333333,
+    "hu": 0.6,
+    "hy": 0.6,
+    "id": 0.8,
+    "is": 0.5333333333333333,
+    "it": 0.7833333333333333,
+    "ja": 0.8333333333333334,
+    "jv": 0.43333333333333335,
+    "ka": 0.45,
+    "km": 0.43333333333333335,
+    "kn": 0.5833333333333334,
+    "ko": 0.7,
+    "lv": 0.4,
+    "ml": 0.6833333333333333,
+    "mn": 0.36666666666666664,
+    "ms": 0.7666666666666667,
+    "my": 0.5666666666666667,
+    "nb": 0.6833333333333333,
+    "nl": 0.7166666666666667,
+    "pl": 0.7,
+    "pt": 0.7166666666666667,
+    "ro": 0.6833333333333333,
+    "ru": 0.7666666666666667,
+    "sl": 0.6,
+    "sq": 0.5666666666666667,
+    "sv": 0.6166666666666667,
+    "sw": 0.2833333333333333,
+    "ta": 0.6,
+    "te": 0.6166666666666667,
+    "th": 0.7166666666666667,
+    "tl": 0.45,
+    "tr": 0.7666666666666667,
+    "ur": 0.65,
+    "vi": 0.6666666666666666,
+    "zh-CN": 0.8666666666666667,
+    "zh-TW": 0.7833333333333333
+   },
+   "mean": 0.6297385620915033,
+   "english": 0.8833333333333333,
+   "languages_within_10pt_of_english": 7
+  },
+  "r3-2b": {
+   "name": "r3-2b",
+   "n": 60,
+   "seed": 0,
+   "per_language": {
+    "af": 0.6333333333333333,
+    "am": 0.4,
+    "ar": 0.65,
+    "az": 0.6666666666666666,
+    "bn": 0.7,
+    "cy": 0.35,
+    "da": 0.7666666666666667,
+    "de": 0.9,
+    "el": 0.8,
+    "en": 0.8833333333333333,
+    "es": 0.7666666666666667,
+    "fa": 0.8166666666666667,
+    "fi": 0.6166666666666667,
+    "fr": 0.7666666666666667,
+    "he": 0.7166666666666667,
+    "hi": 0.7333333333333333,
+    "hu": 0.55,
+    "hy": 0.7166666666666667,
+    "id": 0.7666666666666667,
+    "is": 0.5833333333333334,
+    "it": 0.75,
+    "ja": 0.8,
+    "jv": 0.5,
+    "ka": 0.5166666666666667,
+    "km": 0.5166666666666667,
+    "kn": 0.75,
+    "ko": 0.8,
+    "lv": 0.5166666666666667,
+    "ml": 0.8,
+    "mn": 0.45,
+    "ms": 0.7,
+    "my": 0.6166666666666667,
+    "nb": 0.7166666666666667,
+    "nl": 0.8166666666666667,
+    "pl": 0.8,
+    "pt": 0.7166666666666667,
+    "ro": 0.7333333333333333,
+    "ru": 0.75,
+    "sl": 0.6333333333333333,
+    "sq": 0.5666666666666667,
+    "sv": 0.7333333333333333,
+    "sw": 0.4,
+    "ta": 0.6666666666666666,
+    "te": 0.6666666666666666,
+    "th": 0.6833333333333333,
+    "tl": 0.5333333333333333,
+    "tr": 0.75,
+    "ur": 0.7333333333333333,
+    "vi": 0.7333333333333333,
+    "zh-CN": 0.9,
+    "zh-TW": 0.8333333333333334
+   },
+   "mean": 0.6836601307189543,
+   "english": 0.8833333333333333,
+   "languages_within_10pt_of_english": 11
+  },
+  "old-0.8b": {
+   "name": "old-0.8b",
+   "n": 60,
+   "seed": 0,
+   "per_language": {
+    "af": 0.6333333333333333,
+    "am": 0.26666666666666666,
+    "ar": 0.5166666666666667,
+    "az": 0.65,
+    "bn": 0.6833333333333333,
+    "cy": 0.26666666666666666,
+    "da": 0.6833333333333333,
+    "de": 0.7166666666666667,
+    "el": 0.6833333333333333,
+    "en": 0.8666666666666667,
+    "es": 0.75,
+    "fa": 0.7333333333333333,
+    "fi": 0.5333333333333333,
+    "fr": 0.7666666666666667,
+    "he": 0.6833333333333333,
+    "hi": 0.6333333333333333,
+    "hu": 0.55,
+    "hy": 0.5166666666666667,
+    "id": 0.75,
+    "is": 0.3,
+    "it": 0.7333333333333333,
+    "ja": 0.7833333333333333,
+    "jv": 0.4666666666666667,
+    "ka": 0.4166666666666667,
+    "km": 0.36666666666666664,
+    "kn": 0.6166666666666667,
+    "ko": 0.6666666666666666,
+    "lv": 0.38333333333333336,
+    "ml": 0.65,
+    "mn": 0.2833333333333333,
+    "ms": 0.7333333333333333,
+    "my": 0.4666666666666667,
+    "nb": 0.6666666666666666,
+    "nl": 0.6666666666666666,
+    "pl": 0.65,
+    "pt": 0.7166666666666667,
+    "ro": 0.65,
+    "ru": 0.7333333333333333,
+    "sl": 0.5,
+    "sq": 0.5166666666666667,
+    "sv": 0.65,
+    "sw": 0.26666666666666666,
+    "ta": 0.5833333333333334,
+    "te": 0.6166666666666667,
+    "th": 0.75,
+    "tl": 0.5,
+    "tr": 0.6833333333333333,
+    "ur": 0.6333333333333333,
+    "vi": 0.6666666666666666,
+    "zh-CN": 0.8333333333333334,
+    "zh-TW": 0.7666666666666667
+   },
+   "mean": 0.6039215686274509,
+   "english": 0.8666666666666667,
+   "languages_within_10pt_of_english": 5
+  },
+  "old-2b": {
+   "name": "old-2b",
+   "n": 60,
+   "seed": 0,
+   "per_language": {
+    "af": 0.6333333333333333,
+    "am": 0.4166666666666667,
+    "ar": 0.6666666666666666,
+    "az": 0.7333333333333333,
+    "bn": 0.7333333333333333,
+    "cy": 0.38333333333333336,
+    "da": 0.7666666666666667,
+    "de": 0.8333333333333334,
+    "el": 0.8,
+    "en": 0.85,
+    "es": 0.7833333333333333,
+    "fa": 0.8166666666666667,
+    "fi": 0.65,
+    "fr": 0.7333333333333333,
+    "he": 0.7666666666666667,
+    "hi": 0.7833333333333333,
+    "hu": 0.55,
+    "hy": 0.75,
+    "id": 0.7666666666666667,
+    "is": 0.5333333333333333,
+    "it": 0.7333333333333333,
+    "ja": 0.7666666666666667,
+    "jv": 0.5,
+    "ka": 0.55,
+    "km": 0.5666666666666667,
+    "kn": 0.6833333333333333,
+    "ko": 0.8,
+    "lv": 0.6166666666666667,
+    "ml": 0.7833333333333333,
+    "mn": 0.5166666666666667,
+    "ms": 0.75,
+    "my": 0.6333333333333333,
+    "nb": 0.7166666666666667,
+    "nl": 0.7833333333333333,
+    "pl": 0.8,
+    "pt": 0.75,
+    "ro": 0.7333333333333333,
+    "ru": 0.7333333333333333,
+    "sl": 0.65,
+    "sq": 0.6,
+    "sv": 0.8166666666666667,
+    "sw": 0.45,
+    "ta": 0.6666666666666666,
+    "te": 0.7666666666666667,
+    "th": 0.6833333333333333,
+    "tl": 0.6166666666666667,
+    "tr": 0.7166666666666667,
+    "ur": 0.75,
+    "vi": 0.75,
+    "zh-CN": 0.8333333333333334,
+    "zh-TW": 0.7833333333333333
+   },
+   "mean": 0.6950980392156862,
+   "english": 0.85,
+   "languages_within_10pt_of_english": 23
+  },
+  "base-0.8b": {
+   "name": "base-0.8b",
+   "n": 60,
+   "seed": 0,
+   "per_language": {
+    "af": 0.25,
+    "am": 0.13333333333333333,
+    "ar": 0.35,
+    "az": 0.21666666666666667,
+    "bn": 0.3333333333333333,
+    "cy": 0.11666666666666667,
+    "da": 0.26666666666666666,
+    "de": 0.36666666666666664,
+    "el": 0.26666666666666666,
+    "en": 0.43333333333333335,
+    "es": 0.4,
+    "fa": 0.35,
+    "fi": 0.18333333333333332,
+    "fr": 0.38333333333333336,
+    "he": 0.3,
+    "hi": 0.36666666666666664,
+    "hu": 0.25,
+    "hy": 0.13333333333333333,
+    "id": 0.35,
+    "is": 0.1,
+    "it": 0.35,
+    "ja": 0.3333333333333333,
+    "jv": 0.26666666666666666,
+    "ka": 0.16666666666666666,
+    "km": 0.13333333333333333,
+    "kn": 0.4,
+    "ko": 0.4166666666666667,
+    "lv": 0.21666666666666667,
+    "ml": 0.23333333333333334,
+    "mn": 0.15,
+    "ms": 0.35,
+    "my": 0.15,
+    "nb": 0.23333333333333334,
+    "nl": 0.3,
+    "pl": 0.35,
+    "pt": 0.38333333333333336,
+    "ro": 0.36666666666666664,
+    "ru": 0.4,
+    "sl": 0.21666666666666667,
+    "sq": 0.25,
+    "sv": 0.38333333333333336,
+    "sw": 0.18333333333333332,
+    "ta": 0.2,
+    "te": 0.3,
+    "th": 0.4,
+    "tl": 0.21666666666666667,
+    "tr": 0.2833333333333333,
+    "ur": 0.15,
+    "vi": 0.2833333333333333,
+    "zh-CN": 0.48333333333333334,
+    "zh-TW": 0.4166666666666667
+   },
+   "mean": 0.284640522875817,
+   "english": 0.43333333333333335,
+   "languages_within_10pt_of_english": 20
+  }
+ },
+ "knowledge": {
+  "u3-0.8b": {
+   "name": "u3-0.8b",
+   "n": 116,
+   "acceptable": 0.388,
+   "answerable": 0.341,
+   "unanswerable": 0.536,
+   "english": 0.451,
+   "other_languages": 0.16,
+   "by_language": {
+    "Arabic": 0.0,
+    "English": 0.451,
+    "Filipino": 0.25,
+    "French": 0.0,
+    "Hindi": 0.111,
+    "Japanese": 0.5
+   }
+  },
+  "u3-2b": {
+   "name": "u3-2b",
+   "n": 116,
+   "acceptable": 0.483,
+   "answerable": 0.42,
+   "unanswerable": 0.679,
+   "english": 0.495,
+   "other_languages": 0.44,
+   "by_language": {
+    "Arabic": 0.5,
+    "English": 0.495,
+    "Filipino": 0.75,
+    "French": 0.5,
+    "Hindi": 0.222,
+    "Japanese": 0.5
+   }
+  },
+  "r3-0.8b": {
+   "name": "r3-0.8b",
+   "n": 116,
+   "acceptable": 0.397,
+   "answerable": 0.33,
+   "unanswerable": 0.607,
+   "english": 0.44,
+   "other_languages": 0.24,
+   "by_language": {
+    "Arabic": 0.0,
+    "English": 0.44,
+    "Filipino": 0.25,
+    "French": 0.167,
+    "Hindi": 0.111,
+    "Japanese": 0.75
+   }
+  },
+  "r3-2b": {
+   "name": "r3-2b",
+   "n": 116,
+   "acceptable": 0.517,
+   "answerable": 0.443,
+   "unanswerable": 0.75,
+   "english": 0.527,
+   "other_languages": 0.48,
+   "by_language": {
+    "Arabic": 0.5,
+    "English": 0.527,
+    "Filipino": 0.5,
+    "French": 0.5,
+    "Hindi": 0.333,
+    "Japanese": 0.75
+   }
+  },
+  "old-0.8b": {
+   "name": "old-0.8b",
+   "n": 116,
+   "acceptable": 0.241,
+   "answerable": 0.295,
+   "unanswerable": 0.071,
+   "english": 0.264,
+   "other_languages": 0.16,
+   "by_language": {
+    "Arabic": 0.0,
+    "English": 0.264,
+    "Filipino": 0.0,
+    "French": 0.333,
+    "Hindi": 0.0,
+    "Japanese": 0.5
+   }
+  },
+  "old-2b": {
+   "name": "old-2b",
+   "n": 116,
+   "acceptable": 0.379,
+   "answerable": 0.398,
+   "unanswerable": 0.321,
+   "english": 0.396,
+   "other_languages": 0.32,
+   "by_language": {
+    "Arabic": 0.0,
+    "English": 0.396,
+    "Filipino": 0.0,
+    "French": 0.333,
+    "Hindi": 0.333,
+    "Japanese": 0.75
+   }
+  },
+  "base-0.8b": {
+   "name": "base-0.8b",
+   "n": 116,
+   "acceptable": 0.259,
+   "answerable": 0.284,
+   "unanswerable": 0.179,
+   "english": 0.253,
+   "other_languages": 0.28,
+   "by_language": {
+    "Arabic": 0.0,
+    "English": 0.253,
+    "Filipino": 0.0,
+    "French": 0.333,
+    "Hindi": 0.333,
+    "Japanese": 0.5
+   }
+  }
+ },
+ "knowledge_strict": {
+  "u3-0.8b": {
+   "draft": {
+    "name": "u3-0.8b-draft",
+    "n": 116,
+    "acceptable": 0.44,
+    "answerable": 0.398,
+    "unanswerable": 0.571,
+    "english": 0.484,
+    "other_languages": 0.28,
+    "by_language": {
+     "Arabic": 0.0,
+     "English": 0.484,
+     "Filipino": 0.5,
+     "French": 0.167,
+     "Hindi": 0.222,
+     "Japanese": 0.5
+    },
+    "invents": 0.147,
+    "invents_answerable": 0.159,
+    "invents_unanswerable": 0.107
+   },
+   "strict": {
+    "name": "u3-0.8b-strict",
+    "n": 116,
+    "acceptable": 0.414,
+    "answerable": 0.364,
+    "unanswerable": 0.571,
+    "english": 0.451,
+    "other_languages": 0.28,
+    "by_language": {
+     "Arabic": 0.0,
+     "English": 0.451,
+     "Filipino": 0.5,
+     "French": 0.167,
+     "Hindi": 0.222,
+     "Japanese": 0.5
+    },
+    "invents": 0.112,
+    "invents_answerable": 0.125,
+    "invents_unanswerable": 0.071
+   }
+  },
+  "u3-2b": {
+   "draft": {
+    "name": "u3-2b-draft",
+    "n": 116,
+    "acceptable": 0.5,
+    "answerable": 0.466,
+    "unanswerable": 0.607,
+    "english": 0.495,
+    "other_languages": 0.52,
+    "by_language": {
+     "Arabic": 1.0,
+     "English": 0.495,
+     "Filipino": 1.0,
+     "French": 0.333,
+     "Hindi": 0.333,
+     "Japanese": 0.5
+    },
+    "invents": 0.103,
+    "invents_answerable": 0.114,
+    "invents_unanswerable": 0.071
+   },
+   "strict": {
+    "name": "u3-2b-strict",
+    "n": 116,
+    "acceptable": 0.466,
+    "answerable": 0.409,
+    "unanswerable": 0.643,
+    "english": 0.462,
+    "other_languages": 0.48,
+    "by_language": {
+     "Arabic": 0.5,
+     "English": 0.462,
+     "Filipino": 0.75,
+     "French": 0.5,
+     "Hindi": 0.333,
+     "Japanese": 0.5
+    },
+    "invents": 0.06,
+    "invents_answerable": 0.057,
+    "invents_unanswerable": 0.071
+   }
+  }
+ },
+ "lmeval": {
+  "harness": "lm-eval 0.4.13",
+  "unee": {
+   "0.8b": {
+    "mmlu": 0.4934,
+    "arc_challenge": 0.4352,
+    "hellaswag": 0.5133,
+    "truthfulqa_mc1": 0.3244,
+    "truthfulqa_mc2": 0.4926,
+    "gsm8k": 0.2972,
+    "ifeval:prompt_level_strict_acc": 0.3974,
+    "ifeval:inst_level_strict_acc": 0.512
+   },
+   "2b": {
+    "mmlu": 0.5814,
+    "arc_challenge": 0.4991,
+    "hellaswag": 0.5956,
+    "truthfulqa_mc1": 0.2987,
+    "truthfulqa_mc2": 0.4583,
+    "gsm8k": 0.4898,
+    "ifeval:prompt_level_strict_acc": 0.5268,
+    "ifeval:inst_level_strict_acc": 0.6259
+   }
+  }
+ },
+ "s1mb": {
+  "unee": {
+   "0.8b": {
+    "run": "unee-u3-0.8b+unee-u3-0.8b-long",
+    "benchmarks": 137,
+    "complete": true,
+    "incomplete": [],
+    "tasks": {
+     "choice": 41.42,
+     "noul": 42.43,
+     "score": 22.51
+    },
+    "task_avg": 35.45,
+    "long_rerun": [
+     "contract-nli-choice-test-v1",
+     "qasper-noul-test-v1",
+     "synthetic-relevance--nanocoir-score-test-v1"
+    ]
+   },
+   "2b": {
+    "run": "unee-u3-2b+unee-u3-2b-long",
+    "benchmarks": 137,
+    "complete": true,
+    "incomplete": [],
+    "tasks": {
+     "choice": 52.64,
+     "noul": 45.6,
+     "score": 35.0
+    },
+    "task_avg": 44.41,
+    "long_rerun": [
+     "contract-nli-choice-test-v1",
+     "qasper-noul-test-v1",
+     "synthetic-relevance--nanocoir-score-test-v1"
+    ]
+   }
+  },
+  "published": [
+   {
+    "name": "Jev 1.13",
+    "task_avg": 59.59
+   },
+   {
+    "name": "Open-Jev-9B",
+    "task_avg": 52.1
+   },
+   {
+    "name": "bekko-system-one-v0-400m",
+    "task_avg": 50.6
+   },
+   {
+    "name": "Kev-0.8b",
+    "task_avg": 18.68
+   },
+   {
+    "name": "von",
+    "task_avg": 16.21
+   },
+   {
+    "name": "Laya",
+    "task_avg": 13.36
+   },
+   {
+    "name": "JevForge-0.8B",
+    "task_avg": 1.92
+   }
+  ],
+  "published_note": "S1MB leaderboard, full English suite, snapshot of 2026-09-30.",
+  "clean": {
+   "0.8b": {
+    "benchmarks": 101,
+    "task_avg": 36.74
+   },
+   "2b": {
+    "benchmarks": 101,
+    "task_avg": 45.69
+   }
+  },
+  "leakage": {
+   "items": 15609,
+   "exact": 48,
+   "near_13gram": 1022,
+   "rate": 0.0686
+  }
+ },
+ "max_9b": null
+}

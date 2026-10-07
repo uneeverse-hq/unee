@@ -1,0 +1,32 @@
+# Unee for Ollama: chat (and chat from pasted knowledge) with the 4-bit GGUF.
+#   ollama create uneeverse/unee -f deploy/ollama/Modelfile
+#   ollama run uneeverse/unee
+# Decisions with calibrated probabilities need the Unee API (`unee serve`); Ollama serves chat only.
+FROM ./unee-0.8b-Q4_K_M.gguf
+
+# Qwen chat format with thinking switched off, exactly as Unee was trained.
+TEMPLATE """{{- if .System }}<|im_start|>system
+{{ .System }}<|im_end|>
+{{ end }}
+{{- range $i, $_ := .Messages }}
+{{- $last := eq (len (slice $.Messages $i)) 1 }}
+{{- if eq .Role "user" }}<|im_start|>user
+{{ .Content }}<|im_end|>
+{{ else if eq .Role "assistant" }}<|im_start|>assistant
+{{ .Content }}{{ if not $last }}<|im_end|>
+{{ end }}
+{{- end }}
+{{- if and (ne .Role "assistant") $last }}<|im_start|>assistant
+<think>
+
+</think>
+
+{{ end }}
+{{- end }}"""
+
+PARAMETER stop "<|im_end|>"
+PARAMETER stop "<|im_start|>"
+PARAMETER temperature 0.7
+PARAMETER num_ctx 8192
+
+LICENSE """Apache-2.0. Unee, from UNEEVERSE, by Muneef Mumthas. Please credit "Unee by UNEEVERSE" when you use it."""

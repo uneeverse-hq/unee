@@ -1,0 +1,17 @@
+{
+ "name": "r3-2b",
+ "n": 116,
+ "acceptable": 0.517,
+ "answerable": 0.443,
+ "unanswerable": 0.75,
+ "english": 0.527,
+ "other_languages": 0.48,
+ "by_language": {
+  "Arabic": 0.5,
+  "English": 0.527,
+  "Filipino": 0.5,
+  "French": 0.5,
+  "Hindi": 0.333,
+  "Japanese": 0.75
+ }
+}

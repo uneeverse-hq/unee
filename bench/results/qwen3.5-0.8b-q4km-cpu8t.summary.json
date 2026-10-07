@@ -1,0 +1,29 @@
+{
+ "name": "qwen3.5-0.8b-q4km-cpu8t",
+ "server": "http://127.0.0.1:8090/v1",
+ "concurrency": 1,
+ "zero_shot": false,
+ "n": 400,
+ "acc": 0.6775,
+ "ci": [
+  0.635,
+  0.7175
+ ],
+ "pair_acc": 0.41,
+ "ece": 0.06528923318625782,
+ "brier": 0.4400451510211367,
+ "p50_ms": 3567.433099990012,
+ "p95_ms": 5242.237469996325,
+ "avg_in_tokens": 1195.2425,
+ "top_token_is_option_letter": 1.0,
+ "by_family": {
+  "action_review": 0.62,
+  "agent_routing": 0.74,
+  "claim_support": 0.58,
+  "content_moderation": 0.54,
+  "returns_policy": 0.56,
+  "review_sentiment": 0.6,
+  "support_intent": 0.94,
+  "ticket_triage": 0.84
+ }
+}

@@ -1,0 +1,486 @@
+{
+ "name": "u3-0.8b-strict07",
+ "n": 116,
+ "acceptable": 0.379,
+ "answerable": 0.318,
+ "unanswerable": 0.571,
+ "english": 0.44,
+ "other_languages": 0.16,
+ "by_language": {
+  "Arabic": 0.0,
+  "English": 0.44,
+  "Filipino": 0.25,
+  "French": 0.0,
+  "Hindi": 0.222,
+  "Japanese": 0.25
+ },
+ "invents": 0.095,
+ "invents_answerable": 0.114,
+ "invents_unanswerable": 0.036,
+ "per_question": [
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": true
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": true
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": true
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": true
+  },
+  {
+   "acceptable": false,
+   "invents": true
+  },
+  {
+   "acceptable": false,
+   "invents": true
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": true
+  },
+  {
+   "acceptable": false,
+   "invents": true
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": true
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": true
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": true,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": true
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  },
+  {
+   "acceptable": false,
+   "invents": false
+  }
+ ]
+}

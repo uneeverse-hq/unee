@@ -1,0 +1,40 @@
+{
+ "name": "potato-2b-t2",
+ "url": "http://127.0.0.1:8095/v1",
+ "few_shot_c1": {
+  "n": 20,
+  "p50_ms": 4499.4,
+  "p95_ms": 4706.5,
+  "throughput_per_s": 0.2
+ },
+ "few_shot_c4": {
+  "n": 20,
+  "p50_ms": 18119.6,
+  "p95_ms": 18478.2,
+  "throughput_per_s": 0.2
+ },
+ "repeat_c1": {
+  "n": 20,
+  "p50_ms": 4568.8,
+  "p95_ms": 4776.3,
+  "throughput_per_s": 0.2
+ },
+ "repeat_c4": {
+  "n": 20,
+  "p50_ms": 18452.1,
+  "p95_ms": 19072.0,
+  "throughput_per_s": 0.2
+ },
+ "zero_shot_c1": {
+  "n": 20,
+  "p50_ms": 2309.6,
+  "p95_ms": 2403.7,
+  "throughput_per_s": 0.4
+ },
+ "zero_shot_c4": {
+  "n": 20,
+  "p50_ms": 9290.0,
+  "p95_ms": 9692.9,
+  "throughput_per_s": 0.4
+ }
+}

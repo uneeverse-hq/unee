@@ -1,0 +1,35 @@
+{
+ "name": "unee-e2c-compact",
+ "model": "models\\e2c\\merged",
+ "device": "cuda",
+ "dtype": "bfloat16",
+ "threads": null,
+ "cpu": "Intel64 Family 6 Model 170 Stepping 4, GenuineIntel",
+ "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+ "zero_shot": false,
+ "format": "compact",
+ "temperature": 1.0,
+ "n": 400,
+ "acc": 0.8525,
+ "ci": [
+  0.8175,
+  0.8825624999999996
+ ],
+ "pair_acc": 0.715,
+ "ece": 0.04145589284598829,
+ "brier": 0.22731828770962598,
+ "p50_ms": 113.70334998355247,
+ "p95_ms": 165.66620500525454,
+ "avg_in_tokens": 530.5325,
+ "top_token_is_option_letter": 1.0,
+ "by_family": {
+  "action_review": 0.68,
+  "agent_routing": 0.86,
+  "claim_support": 0.88,
+  "content_moderation": 0.76,
+  "returns_policy": 0.86,
+  "review_sentiment": 0.9,
+  "support_intent": 1.0,
+  "ticket_triage": 0.88
+ }
+}

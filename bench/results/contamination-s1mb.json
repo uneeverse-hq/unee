@@ -1,0 +1,156 @@
+[
+ {
+  "dataset": "open_jev__workflow-controls-v1__agent_trace_observability",
+  "items": 100,
+  "exact": 0,
+  "flagged": 100,
+  "rate": 1.0
+ },
+ {
+  "dataset": "open_jev__tic_tac_toe-v1",
+  "items": 100,
+  "exact": 29,
+  "flagged": 100,
+  "rate": 1.0
+ },
+ {
+  "dataset": "open_jev__phone-extraction-control-v1",
+  "items": 100,
+  "exact": 0,
+  "flagged": 100,
+  "rate": 1.0
+ },
+ {
+  "dataset": "open_jev__entity-alignment-control-v1",
+  "items": 100,
+  "exact": 0,
+  "flagged": 100,
+  "rate": 1.0
+ },
+ {
+  "dataset": "open_jev__email-selection-control-v1",
+  "items": 100,
+  "exact": 0,
+  "flagged": 100,
+  "rate": 1.0
+ },
+ {
+  "dataset": "open_jev__drone-control-v1",
+  "items": 100,
+  "exact": 0,
+  "flagged": 100,
+  "rate": 1.0
+ },
+ {
+  "dataset": "open_jev__context-retention-control-v1",
+  "items": 100,
+  "exact": 0,
+  "flagged": 100,
+  "rate": 1.0
+ },
+ {
+  "dataset": "open_jev__amount-extraction-control-v1",
+  "items": 100,
+  "exact": 0,
+  "flagged": 100,
+  "rate": 1.0
+ },
+ {
+  "dataset": "corr2cause",
+  "items": 100,
+  "exact": 0,
+  "flagged": 97,
+  "rate": 0.97
+ },
+ {
+  "dataset": "open_jev__snake-v1",
+  "items": 100,
+  "exact": 0,
+  "flagged": 64,
+  "rate": 0.64
+ },
+ {
+  "dataset": "open_jev__reasoning-control-v1",
+  "items": 100,
+  "exact": 0,
+  "flagged": 30,
+  "rate": 0.3
+ },
+ {
+  "dataset": "ethics",
+  "items": 100,
+  "exact": 18,
+  "flagged": 18,
+  "rate": 0.18
+ },
+ {
+  "dataset": "open_jev__browser-control-v1",
+  "items": 100,
+  "exact": 0,
+  "flagged": 14,
+  "rate": 0.14
+ },
+ {
+  "dataset": "laya__typed_decisions",
+  "items": 100,
+  "exact": 0,
+  "flagged": 13,
+  "rate": 0.13
+ },
+ {
+  "dataset": "open_jev__citation-control-v1",
+  "items": 100,
+  "exact": 0,
+  "flagged": 9,
+  "rate": 0.09
+ },
+ {
+  "dataset": "contract_nli",
+  "items": 100,
+  "exact": 0,
+  "flagged": 7,
+  "rate": 0.07
+ },
+ {
+  "dataset": "spartqa",
+  "items": 100,
+  "exact": 0,
+  "flagged": 5,
+  "rate": 0.05
+ },
+ {
+  "dataset": "open_jev__silent-failure-control-v1",
+  "items": 100,
+  "exact": 0,
+  "flagged": 5,
+  "rate": 0.05
+ },
+ {
+  "dataset": "open_jev__mailroom-control-v1",
+  "items": 100,
+  "exact": 0,
+  "flagged": 3,
+  "rate": 0.03
+ },
+ {
+  "dataset": "mtop",
+  "items": 100,
+  "exact": 1,
+  "flagged": 1,
+  "rate": 0.01
+ },
+ {
+  "dataset": "hh_rlhf",
+  "items": 100,
+  "exact": 0,
+  "flagged": 1,
+  "rate": 0.01
+ },
+ {
+  "dataset": "synthetic_relevance__nanobeir__NanoNQ",
+  "items": 400,
+  "exact": 0,
+  "flagged": 3,
+  "rate": 0.007
+ }
+]

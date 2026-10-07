@@ -1,0 +1,31 @@
+{
+ "name": "unee-0.8b-q4km-cpu6t",
+ "server": "http://127.0.0.1:8090/v1",
+ "concurrency": 1,
+ "zero_shot": false,
+ "format": "compact",
+ "orders": 1,
+ "n": 400,
+ "acc": 0.8175,
+ "ci": [
+  0.7825,
+  0.8525
+ ],
+ "pair_acc": 0.645,
+ "ece": 0.06116045753439663,
+ "brier": 0.2795690488245213,
+ "p50_ms": 1333.865450011217,
+ "p95_ms": 2683.1370600004448,
+ "avg_in_tokens": 530.5325,
+ "top_token_is_option_letter": 1.0,
+ "by_family": {
+  "action_review": 0.72,
+  "agent_routing": 0.8,
+  "claim_support": 0.76,
+  "content_moderation": 0.78,
+  "returns_policy": 0.76,
+  "review_sentiment": 0.86,
+  "support_intent": 1.0,
+  "ticket_triage": 0.86
+ }
+}

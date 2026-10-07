@@ -1,0 +1,21 @@
+{
+ "name": "unee-0.8b-llamacuda",
+ "c1": {
+  "n": 160,
+  "p50_ms": 76.7,
+  "p95_ms": 115.9,
+  "throughput_per_s": 12.0
+ },
+ "c4": {
+  "n": 160,
+  "p50_ms": 402.2,
+  "p95_ms": 514.3,
+  "throughput_per_s": 9.7
+ },
+ "c16": {
+  "n": 160,
+  "p50_ms": 1226.8,
+  "p95_ms": 1544.8,
+  "throughput_per_s": 12.4
+ }
+}

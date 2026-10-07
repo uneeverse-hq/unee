@@ -1,0 +1,31 @@
+{
+ "name": "unee-max-9b-compact",
+ "server": "http://127.0.0.1:8080/v1",
+ "concurrency": 4,
+ "zero_shot": false,
+ "format": "compact",
+ "orders": 1,
+ "n": 400,
+ "acc": 0.93,
+ "ci": [
+  0.905,
+  0.9525
+ ],
+ "pair_acc": 0.86,
+ "ece": 0.030429089215565263,
+ "brier": 0.10817566973235034,
+ "p50_ms": 1967.3810499989486,
+ "p95_ms": 3205.0130899977376,
+ "avg_in_tokens": 530.5325,
+ "top_token_is_option_letter": 1.0,
+ "by_family": {
+  "action_review": 0.84,
+  "agent_routing": 1.0,
+  "claim_support": 0.9,
+  "content_moderation": 0.88,
+  "returns_policy": 0.96,
+  "review_sentiment": 0.92,
+  "support_intent": 1.0,
+  "ticket_triage": 0.94
+ }
+}

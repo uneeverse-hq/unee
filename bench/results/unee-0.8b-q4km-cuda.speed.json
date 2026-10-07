@@ -1,0 +1,40 @@
+{
+ "name": "unee-0.8b-q4km-cuda",
+ "url": "http://127.0.0.1:8091/v1",
+ "few_shot_c1": {
+  "n": 120,
+  "p50_ms": 111.8,
+  "p95_ms": 132.0,
+  "throughput_per_s": 9.5
+ },
+ "few_shot_c4": {
+  "n": 120,
+  "p50_ms": 414.7,
+  "p95_ms": 472.0,
+  "throughput_per_s": 9.7
+ },
+ "repeat_c1": {
+  "n": 50,
+  "p50_ms": 80.7,
+  "p95_ms": 86.0,
+  "throughput_per_s": 12.4
+ },
+ "repeat_c4": {
+  "n": 50,
+  "p50_ms": 409.7,
+  "p95_ms": 428.2,
+  "throughput_per_s": 9.7
+ },
+ "zero_shot_c1": {
+  "n": 120,
+  "p50_ms": 72.3,
+  "p95_ms": 116.0,
+  "throughput_per_s": 12.5
+ },
+ "zero_shot_c4": {
+  "n": 120,
+  "p50_ms": 301.9,
+  "p95_ms": 399.3,
+  "throughput_per_s": 12.9
+ }
+}

@@ -1,0 +1,35 @@
+[project]
+name = "unee"
+version = "0.3.0"
+description = "Unee by UNEEVERSE: a small open AI model that makes decisions and streams chat answers from your own knowledge, on any PC (Jev-compatible API)"
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{ name = "Muneef Mumthas" }]
+keywords = ["llm", "decision-model", "chatbot", "rag", "multilingual", "jev-compatible", "on-device", "llama.cpp"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+requires-python = ">=3.10"
+dependencies = ["httpx>=0.27", "starlette>=0.40", "uvicorn>=0.30"]
+
+[project.urls]
+Homepage = "https://uneeverse.net/unee"
+Repository = "https://github.com/uneeverse-hq/unee"
+Documentation = "https://uneeverse.net/unee/technical"
+
+[project.optional-dependencies]
+mcp = ["mcp>=2"]
+
+[project.scripts]
+unee = "unee.cli:main"
+unee-server = "unee.server:main"
+unee-mcp = "unee.mcp_server:main"
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["unee"]

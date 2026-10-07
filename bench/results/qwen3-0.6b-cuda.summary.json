@@ -1,0 +1,33 @@
+{
+ "name": "qwen3-0.6b-cuda",
+ "model": "Qwen/Qwen3-0.6B",
+ "device": "cuda",
+ "dtype": "bfloat16",
+ "threads": null,
+ "cpu": "Intel64 Family 6 Model 170 Stepping 4, GenuineIntel",
+ "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+ "zero_shot": false,
+ "n": 400,
+ "acc": 0.4525,
+ "ci": [
+  0.4,
+  0.505
+ ],
+ "pair_acc": 0.23,
+ "ece": 0.41674264527857297,
+ "brier": 0.9334324854081963,
+ "p50_ms": 66.88035000115633,
+ "p95_ms": 93.51251499174393,
+ "avg_in_tokens": 1196.5775,
+ "top_token_is_option_letter": 1.0,
+ "by_family": {
+  "action_review": 0.4,
+  "agent_routing": 0.6,
+  "claim_support": 0.44,
+  "content_moderation": 0.32,
+  "returns_policy": 0.3,
+  "review_sentiment": 0.32,
+  "support_intent": 0.84,
+  "ticket_triage": 0.4
+ }
+}

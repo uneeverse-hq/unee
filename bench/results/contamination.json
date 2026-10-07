@@ -1,0 +1,44 @@
+{
+ "DecideBench v1.1": {
+  "items": 697,
+  "exact": 0,
+  "near_13gram": 0,
+  "rate": 0.0
+ },
+ "S1MB test": {
+  "items": 15609,
+  "exact": 48,
+  "near_13gram": 1022,
+  "rate": 0.0686
+ },
+ "val (selection)": {
+  "items": 610,
+  "exact": 0,
+  "near_13gram": 0,
+  "rate": 0.0
+ },
+ "val_ml (selection)": {
+  "items": 149,
+  "exact": 0,
+  "near_13gram": 0,
+  "rate": 0.0
+ },
+ "s1mb_val (selection)": {
+  "items": 4094,
+  "exact": 17,
+  "near_13gram": 343,
+  "rate": 0.0879
+ },
+ "knowledge eval": {
+  "items": 116,
+  "exact": 0,
+  "near_13gram": 0,
+  "rate": 0.0
+ },
+ "JevBench": {
+  "items": 2934,
+  "exact": 0,
+  "near_13gram": 156,
+  "rate": 0.0532
+ }
+}

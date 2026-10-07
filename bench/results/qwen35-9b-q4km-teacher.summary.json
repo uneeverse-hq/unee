@@ -1,0 +1,29 @@
+{
+ "name": "qwen35-9b-q4km-teacher",
+ "server": "http://127.0.0.1:8080/v1",
+ "concurrency": 4,
+ "zero_shot": false,
+ "n": 400,
+ "acc": 0.9675,
+ "ci": [
+  0.9475,
+  0.985
+ ],
+ "pair_acc": 0.94,
+ "ece": 0.010794639518654815,
+ "brier": 0.05200033254100782,
+ "p50_ms": 2811.161700010416,
+ "p95_ms": 3796.525214983558,
+ "avg_in_tokens": 1195.2425,
+ "top_token_is_option_letter": 1.0,
+ "by_family": {
+  "action_review": 0.98,
+  "agent_routing": 1.0,
+  "claim_support": 0.96,
+  "content_moderation": 0.96,
+  "returns_policy": 0.86,
+  "review_sentiment": 0.98,
+  "support_intent": 1.0,
+  "ticket_triage": 1.0
+ }
+}

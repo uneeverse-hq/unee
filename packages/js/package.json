@@ -1,0 +1,22 @@
+{
+  "name": "unee",
+  "version": "0.3.0",
+  "description": "Unee by UNEEVERSE: a small open AI model that makes decisions and streams chat answers from your own knowledge, in the browser or Node. No server, no API key.",
+  "author": "Muneef Mumthas",
+  "homepage": "https://uneeverse.net/unee",
+  "repository": { "type": "git", "url": "git+https://github.com/uneeverse-hq/unee.git", "directory": "packages/js" },
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./prompt": "./src/prompt.js",
+    "./knowledge": "./src/knowledge.js",
+    "./systemone": "./src/systemone.js"
+  },
+  "files": ["src", "NOTICE"],
+  "license": "Apache-2.0",
+  "peerDependencies": {
+    "@huggingface/transformers": ">=3.7.0"
+  },
+  "keywords": ["llm", "decision-model", "chatbot", "rag", "multilingual", "jev-compatible", "classification", "webgpu", "transformers.js", "on-device"]
+}

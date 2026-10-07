@@ -1,0 +1,17 @@
+{
+ "name": "old-2b",
+ "n": 116,
+ "acceptable": 0.379,
+ "answerable": 0.398,
+ "unanswerable": 0.321,
+ "english": 0.396,
+ "other_languages": 0.32,
+ "by_language": {
+  "Arabic": 0.0,
+  "English": 0.396,
+  "Filipino": 0.0,
+  "French": 0.333,
+  "Hindi": 0.333,
+  "Japanese": 0.75
+ }
+}

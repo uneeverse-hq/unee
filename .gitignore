@@ -1,0 +1,37 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Third-party checkouts and binaries (fetched separately, see bench/README.md)
+bench/decidebench/
+tools/llama.cpp/
+
+# Model weights, caches and large artifacts
+models/
+*.safetensors
+*.onnx
+*.gguf
+*.bin
+data/cache/
+data/generated/
+
+# Secrets
+.env
+tools/llama-src/
+bench/jev-bench/
+bench/S1MB/
+
+# Build metadata
+*.egg-info/
+build/
+dist/
+
+# JS
+node_modules/
+package-lock.json
+
+# MASSIVE test files (mteb/amazon_massive_scenario, Apache-2.0): fetch with the loop in bench/run_massive.py's docstring
+bench/massive/
+
+bench/s1mb-board/

@@ -1,0 +1,17 @@
+{
+ "name": "u3-0.8b",
+ "n": 116,
+ "acceptable": 0.388,
+ "answerable": 0.341,
+ "unanswerable": 0.536,
+ "english": 0.451,
+ "other_languages": 0.16,
+ "by_language": {
+  "Arabic": 0.0,
+  "English": 0.451,
+  "Filipino": 0.25,
+  "French": 0.0,
+  "Hindi": 0.111,
+  "Japanese": 0.5
+ }
+}

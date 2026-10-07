@@ -1,0 +1,31 @@
+{
+ "name": "tinyjev-v0-q4km-cpu6t-compact-2orders",
+ "server": "http://127.0.0.1:8090/v1",
+ "concurrency": 1,
+ "zero_shot": false,
+ "format": "compact",
+ "orders": 2,
+ "n": 400,
+ "acc": 0.7725,
+ "ci": [
+  0.7325,
+  0.8075
+ ],
+ "pair_acc": 0.565,
+ "ece": 0.09811176294801893,
+ "brier": 0.3633256818661191,
+ "p50_ms": 2934.80864999583,
+ "p95_ms": 4548.3165950121465,
+ "avg_in_tokens": 507.6225,
+ "top_token_is_option_letter": 1.0,
+ "by_family": {
+  "action_review": 0.74,
+  "agent_routing": 0.74,
+  "claim_support": 0.7,
+  "content_moderation": 0.7,
+  "returns_policy": 0.62,
+  "review_sentiment": 0.84,
+  "support_intent": 1.0,
+  "ticket_triage": 0.84
+ }
+}

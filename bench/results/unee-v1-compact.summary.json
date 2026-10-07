@@ -1,0 +1,35 @@
+{
+ "name": "tinyjev-v1-compact",
+ "model": "models\\v1\\merged",
+ "device": "cuda",
+ "dtype": "bfloat16",
+ "threads": null,
+ "cpu": "Intel64 Family 6 Model 170 Stepping 4, GenuineIntel",
+ "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+ "zero_shot": false,
+ "format": "compact",
+ "temperature": 1.0,
+ "n": 400,
+ "acc": 0.7825,
+ "ci": [
+  0.7425,
+  0.82
+ ],
+ "pair_acc": 0.605,
+ "ece": 0.04887838937342168,
+ "brier": 0.30863527431012877,
+ "p50_ms": 99.86859999480657,
+ "p95_ms": 132.16143000754525,
+ "avg_in_tokens": 507.6225,
+ "top_token_is_option_letter": 1.0,
+ "by_family": {
+  "action_review": 0.68,
+  "agent_routing": 0.84,
+  "claim_support": 0.84,
+  "content_moderation": 0.74,
+  "returns_policy": 0.42,
+  "review_sentiment": 0.88,
+  "support_intent": 1.0,
+  "ticket_triage": 0.86
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "n": 400,
+ "acc": 0.765,
+ "pair_acc": 0.55,
+ "ece": 0.06812850000000001,
+ "p50": 1504.899449981167,
+ "p95": 2219.1262499865834,
+ "unusable": 0.0,
+ "by_family": {
+  "action_review": 0.7,
+  "agent_routing": 0.76,
+  "claim_support": 0.7,
+  "content_moderation": 0.7,
+  "returns_policy": 0.66,
+  "review_sentiment": 0.8,
+  "support_intent": 1.0,
+  "ticket_triage": 0.8
+ }
+}

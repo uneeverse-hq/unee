@@ -1,0 +1,17 @@
+{
+ "name": "u3-2b",
+ "n": 116,
+ "acceptable": 0.483,
+ "answerable": 0.42,
+ "unanswerable": 0.679,
+ "english": 0.495,
+ "other_languages": 0.44,
+ "by_language": {
+  "Arabic": 0.5,
+  "English": 0.495,
+  "Filipino": 0.75,
+  "French": 0.5,
+  "Hindi": 0.222,
+  "Japanese": 0.5
+ }
+}

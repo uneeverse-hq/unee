@@ -1,0 +1,40 @@
+{
+ "name": "unee-0.8b-q4km-cpu8t",
+ "url": "http://127.0.0.1:8090/v1",
+ "few_shot_c1": {
+  "n": 60,
+  "p50_ms": 1591.5,
+  "p95_ms": 1777.1,
+  "throughput_per_s": 0.6
+ },
+ "few_shot_c4": {
+  "n": 60,
+  "p50_ms": 4827.2,
+  "p95_ms": 5040.8,
+  "throughput_per_s": 0.9
+ },
+ "repeat_c1": {
+  "n": 50,
+  "p50_ms": 1531.4,
+  "p95_ms": 1668.2,
+  "throughput_per_s": 0.6
+ },
+ "repeat_c4": {
+  "n": 50,
+  "p50_ms": 4958.0,
+  "p95_ms": 5289.9,
+  "throughput_per_s": 0.8
+ },
+ "zero_shot_c1": {
+  "n": 60,
+  "p50_ms": 714.9,
+  "p95_ms": 778.0,
+  "throughput_per_s": 1.4
+ },
+ "zero_shot_c4": {
+  "n": 60,
+  "p50_ms": 2597.2,
+  "p95_ms": 2641.5,
+  "throughput_per_s": 1.5
+ }
+}
