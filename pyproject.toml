@@ -1,6 +1,6 @@
 [project]
 name = "unee"
-version = "0.3.0"
+version = "0.3.1"
 description = "Unee by UNEEVERSE: a small open AI model that makes decisions and streams chat answers from your own knowledge, on any PC (Jev-compatible API)"
 readme = "README.md"
 license = "Apache-2.0"

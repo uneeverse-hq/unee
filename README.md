@@ -1,8 +1,4 @@
-<p align="center">
-  <a href="https://uneeverse.net/unee"><img src="https://raw.githubusercontent.com/uneeverse-hq/unee/main/docs/assets/unee-banner.png" alt="Unee: a small AI model that lives inside your app. It decides and it talks." width="100%"></a>
-</p>
-
-<h1 align="center">Unee</h1>
+<h1 align="center">Unee🟣</h1>
 
 <p align="center">
   <b>One small open model that makes decisions and talks.</b><br>
@@ -10,13 +6,12 @@
 </p>
 
 <p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-blue" alt="License: Apache 2.0"></a>
-  <a href="https://github.com/uneeverse-hq/unee/stargazers"><img src="https://img.shields.io/github/stars/uneeverse-hq/unee?label=stars" alt="GitHub stars"></a>
-  <a href="https://huggingface.co/uneeverse"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fhuggingface.co%2Fapi%2Fmodels%2Funeeverse%2Funee-0.8b&query=%24.downloads&label=Hugging%20Face%20downloads&color=yellow" alt="Hugging Face downloads"></a>
-  <a href="https://pypi.org/project/unee/"><img src="https://img.shields.io/pypi/v/unee?label=pip" alt="PyPI version"></a>
-  <a href="https://pypi.org/project/unee/"><img src="https://img.shields.io/pypi/dm/unee?label=pip%20installs" alt="PyPI downloads a month"></a>
-  <a href="https://www.npmjs.com/package/@uneeverse/unee"><img src="https://img.shields.io/npm/v/@uneeverse/unee?label=npm" alt="npm version"></a>
-  <a href="https://www.npmjs.com/package/@uneeverse/unee"><img src="https://img.shields.io/npm/dm/@uneeverse/unee?label=npm%20installs" alt="npm downloads a month"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/licence-Apache--2.0-7057FF" alt="Licence: Apache 2.0"></a>
+  <a href="https://pypi.org/project/unee/"><img src="https://img.shields.io/pypi/v/unee?label=pip&color=7057FF" alt="PyPI version"></a>
+  <a href="https://www.npmjs.com/package/@uneeverse/unee"><img src="https://img.shields.io/npm/v/@uneeverse/unee?label=npm&color=7057FF" alt="npm version"></a>
+  <a href="https://ollama.com/uneeverse/unee"><img src="https://img.shields.io/badge/ollama-uneeverse%2Funee-7057FF" alt="Ollama: uneeverse/unee"></a>
+  <a href="https://huggingface.co/uneeverse"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fhuggingface.co%2Fapi%2Fmodels%2Funeeverse%2Funee-0.8b&query=%24.downloads&label=Hugging%20Face%20downloads&color=7057FF" alt="Hugging Face downloads"></a>
+  <a href="https://github.com/uneeverse-hq/unee/stargazers"><img src="https://img.shields.io/github/stars/uneeverse-hq/unee?label=stars&style=flat&color=7057FF" alt="GitHub stars"></a>
 </p>
 
 <p align="center">
