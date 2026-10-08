@@ -1,4 +1,4 @@
-<h1 align="center">Unee🟣</h1>
+<h1 align="center">Unee</h1>
 
 <p align="center">
   <b>One small open model that makes decisions and talks.</b><br>
