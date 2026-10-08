@@ -124,7 +124,7 @@ def python_side(work: Path, args) -> None:
     port = "8177"
     serve = [str(bindir / "unee"), "serve", "--model", str(gguf), "--port", port, "--llama-log", str(work / "llama.log")]
     if args.llama_server:
-        serve += ["--llama-server", args.llama_server]
+        serve += ["--llama-server", str(Path(args.llama_server).resolve())]  # the server runs from the temporary folder
     log = open(work / "serve.log", "w", encoding="utf-8")
     server = subprocess.Popen(serve, stdout=log, stderr=subprocess.STDOUT, cwd=work)
     try:
