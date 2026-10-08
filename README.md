@@ -1,19 +1,68 @@
-# Unee
+<p align="center">
+  <a href="https://uneeverse.net/unee"><img src="https://raw.githubusercontent.com/uneeverse-hq/unee/main/docs/assets/unee-banner.png" alt="Unee: a small AI model that lives inside your app. It decides and it talks." width="100%"></a>
+</p>
 
-[![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
-[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97-uneeverse-yellow)](https://huggingface.co/uneeverse)
-[![PyPI](https://img.shields.io/pypi/v/unee)](https://pypi.org/project/unee/)
-[![npm](https://img.shields.io/npm/v/unee)](https://www.npmjs.com/package/unee)
+<h1 align="center">Unee</h1>
+
+<p align="center">
+  <b>One small open model that makes decisions and talks.</b><br>
+  It runs on an ordinary PC or inside a browser tab. No API key, no bill per call.
+</p>
+
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-blue" alt="License: Apache 2.0"></a>
+  <a href="https://github.com/uneeverse-hq/unee/stargazers"><img src="https://img.shields.io/github/stars/uneeverse-hq/unee?label=stars" alt="GitHub stars"></a>
+  <a href="https://huggingface.co/uneeverse"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fhuggingface.co%2Fapi%2Fmodels%2Funeeverse%2Funee-0.8b&query=%24.downloads&label=Hugging%20Face%20downloads&color=yellow" alt="Hugging Face downloads"></a>
+  <a href="https://pypi.org/project/unee/"><img src="https://img.shields.io/pypi/v/unee?label=pip" alt="PyPI version"></a>
+  <a href="https://pypi.org/project/unee/"><img src="https://img.shields.io/pypi/dm/unee?label=pip%20installs" alt="PyPI downloads a month"></a>
+  <a href="https://www.npmjs.com/package/unee"><img src="https://img.shields.io/npm/v/unee?label=npm" alt="npm version"></a>
+  <a href="https://www.npmjs.com/package/unee"><img src="https://img.shields.io/npm/dm/unee?label=npm%20installs" alt="npm downloads a month"></a>
+</p>
+
+<p align="center">
+  <a href="https://uneeverse.net/unee"><b>Try it in your browser</b></a> ·
+  <a href="https://uneeverse.net/unee/technical">How it works, with every number</a> ·
+  <a href="https://huggingface.co/uneeverse">Model files</a> ·
+  <a href="#run-the-server-any-machine-with-llamacpp">Run it yourself</a>
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/uneeverse-hq/unee/main/docs/assets/unee-opening.gif" alt="The Unee opening from uneeverse.net: the dot cuts the UNEEVERSE mark and lands as the full stop of Unee" width="720">
+</p>
 
 **Unee, from UNEEVERSE, by Muneef Mumthas.** A small AI model that lives inside your app: a decision model and a streaming chatbot that answers from your own knowledge, on any PC or in the browser.
-
-**Try it:** [uneeverse.net/unee](https://uneeverse.net/unee) (runs in your browser) · **How it works, with every number:** [uneeverse.net/unee/technical](https://uneeverse.net/unee/technical)
 
 ```bash
 pip install unee            # Python client, HTTP server, MCP tools
 npm i unee                  # browser and Node.js (WebGPU, WASM or CPU)
 ollama run uneeverse/unee   # chat in a terminal
 ```
+
+## At a glance
+
+| | Unee 0.8B | Unee 2B |
+|---|---|---|
+| Download (4-bit) | 469 MB in the browser, 529 MB for llama.cpp | 1.27 GB for llama.cpp |
+| Runs on | A browser tab with WebGPU, any CPU, any GPU | Any CPU, any GPU |
+| DecideBench v1.1 | **84.0%** | **88.0%** |
+| Right when it says it is sure (90% or more) | **96.3%**, on 40% of decisions | **97.2%**, on 62% of decisions |
+| One decision on a laptop GPU | 96 ms | 111 ms |
+| Licence | Apache 2.0 | Apache 2.0 |
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/uneeverse-hq/unee/main/docs/assets/unee-confidence.png" alt="97.2% right when it says it is sure" width="32%">
+  <img src="https://raw.githubusercontent.com/uneeverse-hq/unee/main/docs/assets/unee-compare.png" alt="Unee next to Jev and Laya on DecideBench and S1MB" width="32%">
+  <img src="https://raw.githubusercontent.com/uneeverse-hq/unee/main/docs/assets/unee-strict.png" alt="Strict mode: checked before it is sent" width="32%">
+</p>
+
+Why it is worth a look:
+
+- **It tells you how sure it is.** Every option comes back with a calibrated probability, so your app can act on the sure answers and send the rest to a person.
+- **It does both jobs.** The same loaded model decides and chats. No second model, no second server.
+- **It stays on your side of the wall.** It runs where your data already is: a laptop, your own server, or the visitor's browser.
+- **It is honest about itself.** Larger hosted models are more accurate, and the numbers below say so. Every figure traces to a file in `bench/results`.
+
+## What it does
 
 Give it an input and a question with options, and it returns a calibrated probability for every option:
 - **noul:** yes or no
