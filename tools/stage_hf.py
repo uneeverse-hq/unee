@@ -100,7 +100,8 @@ def main() -> None:
         modelfile = (ROOT / "deploy/ollama/Modelfile").read_text(encoding="utf-8")
         modelfile = re.sub(r"uneeverse/unee\b", f"uneeverse/unee:{size}", modelfile.replace("./unee-0.8b-Q4_K_M.gguf",
                                                                                          f"./{name}")).replace("deploy/ollama/Modelfile", "Modelfile")
-        (gguf / "Modelfile").write_text(modelfile, encoding="utf-8")
+        # Unix line endings: Ollama keeps a carriage return inside TEMPLATE, which would change the chat format.
+        (gguf / "Modelfile").write_text(modelfile, encoding="utf-8", newline="\n")
         intro = (f"4-bit GGUF (Q4_K_M) of [{ORG}/unee-{size}](https://huggingface.co/{ORG}/unee-{size}). "
                  f"Run it with `unee serve --model {name}` (decisions and chat), llama.cpp, or Ollama (chat).")
         finish(gguf, card({"base_model": f"{ORG}/unee-{size}", "base_model_relation": "quantized",

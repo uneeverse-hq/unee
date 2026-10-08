@@ -1,0 +1,2 @@
+# Ollama keeps a carriage return inside TEMPLATE, so the Modelfile must have Unix line endings on every OS.
+deploy/ollama/Modelfile text eol=lf
