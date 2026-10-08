@@ -67,7 +67,7 @@ CLIENT_CHECKS = textwrap.dedent('''
 
 NODE_CHECKS = textwrap.dedent('''
     import { env } from "@huggingface/transformers";
-    import { Unee } from "unee";
+    import { Unee } from "@uneeverse/unee";
     import path from "node:path";
     const source = process.argv[2];
     let id = source;
@@ -171,7 +171,7 @@ def python_side(work: Path, args) -> None:
 
 
 def node_side(work: Path, args) -> None:
-    print("\nNode.js: a new folder, `npm i unee`, the browser model on the processor", flush=True)
+    print("\nNode.js: a new folder, `npm i @uneeverse/unee`, the browser model on the processor", flush=True)
     folder = work / "node"
     folder.mkdir()
     npm = shutil.which("npm")
@@ -180,14 +180,14 @@ def node_side(work: Path, args) -> None:
         return
     run([npm, "init", "-y"], cwd=folder, check=True)
     if args.published:
-        target = "unee"
+        target = "@uneeverse/unee"
     else:
         packed = run([npm, "pack", "--silent", "--pack-destination", str(work)], cwd=ROOT / "packages" / "js")
         target = str(work / packed.stdout.strip().splitlines()[-1])
     done = run([npm, "install", "--silent", target, "@huggingface/transformers"], cwd=folder)
-    installed = (folder / "node_modules" / "unee" / "package.json").exists()
-    check("npm i unee" + (" (from npm)" if args.published else " (the packed tarball)"), done.returncode == 0 and installed,
-          json.loads((folder / "node_modules" / "unee" / "package.json").read_text())["version"] if installed else done.stderr[-300:])
+    installed = (folder / "node_modules" / "@uneeverse" / "unee" / "package.json").exists()
+    check("npm i @uneeverse/unee" + (" (from npm)" if args.published else " (the packed tarball)"), done.returncode == 0 and installed,
+          json.loads((folder / "node_modules" / "@uneeverse" / "unee" / "package.json").read_text())["version"] if installed else done.stderr[-300:])
     if not installed:
         return
     (folder / "checks.mjs").write_text(NODE_CHECKS, encoding="utf-8")

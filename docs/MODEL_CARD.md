@@ -42,10 +42,10 @@ Version 0.3, 2026-10-07. The 0.8B model is a 50/50 weight average of Unee 0.2 0.
 
 ## Quick start
 
-**In the browser or Node.js** (`npm i unee @huggingface/transformers`):
+**In the browser or Node.js** (`npm i @uneeverse/unee @huggingface/transformers`):
 
 ```js
-import { Unee } from "unee";
+import { Unee } from "@uneeverse/unee";
 const unee = await Unee.load("uneeverse/unee-0.8b", { device: "webgpu" }); // or { device: "cpu" } in Node
 const res = await unee.decide({ state: "My card was charged twice", questions: {
   team: { type: "choice", instructions: "Which team handles this?", criteria: { billing: "Charges and refunds", technical: "Bugs" } } } });

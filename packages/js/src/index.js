@@ -1,6 +1,6 @@
 // Unee in the browser or Node, on transformers.js (WebGPU, with a WASM fallback). No server and no API key.
 //
-//   import { Unee } from "unee";
+//   import { Unee } from "@uneeverse/unee";
 //   const unee = await Unee.load("<hf-repo-or-local-path>", { device: "webgpu" });
 //   const res = await unee.decide({ state: "...", questions: { spam: { type: "noul", instructions: "Is this spam?" } } });
 //   for await (const piece of unee.stream([{ role: "user", content: "Write a haiku about tea." }])) print(piece);

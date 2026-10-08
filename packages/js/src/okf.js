@@ -1,6 +1,6 @@
 // Read an Open Knowledge Format (OKF) bundle as knowledge for Unee. A port of unee/okf.py that reads identically.
 //
-//   import { okfDocuments } from "unee";
+//   import { okfDocuments } from "@uneeverse/unee";
 //   const docs = okfDocuments({ "refunds.md": text1, "shipping/uk.md": text2 });   // path in the bundle -> file text
 //   for await (const piece of unee.stream(messages, { knowledge: docs, strict: true })) ...
 //

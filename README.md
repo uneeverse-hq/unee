@@ -15,8 +15,8 @@
   <a href="https://huggingface.co/uneeverse"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fhuggingface.co%2Fapi%2Fmodels%2Funeeverse%2Funee-0.8b&query=%24.downloads&label=Hugging%20Face%20downloads&color=yellow" alt="Hugging Face downloads"></a>
   <a href="https://pypi.org/project/unee/"><img src="https://img.shields.io/pypi/v/unee?label=pip" alt="PyPI version"></a>
   <a href="https://pypi.org/project/unee/"><img src="https://img.shields.io/pypi/dm/unee?label=pip%20installs" alt="PyPI downloads a month"></a>
-  <a href="https://www.npmjs.com/package/unee"><img src="https://img.shields.io/npm/v/unee?label=npm" alt="npm version"></a>
-  <a href="https://www.npmjs.com/package/unee"><img src="https://img.shields.io/npm/dm/unee?label=npm%20installs" alt="npm downloads a month"></a>
+  <a href="https://www.npmjs.com/package/@uneeverse/unee"><img src="https://img.shields.io/npm/v/@uneeverse/unee?label=npm" alt="npm version"></a>
+  <a href="https://www.npmjs.com/package/@uneeverse/unee"><img src="https://img.shields.io/npm/dm/@uneeverse/unee?label=npm%20installs" alt="npm downloads a month"></a>
 </p>
 
 <p align="center">
@@ -34,7 +34,7 @@
 
 ```bash
 pip install unee            # Python client, HTTP server, MCP tools
-npm i unee                  # browser and Node.js (WebGPU, WASM or CPU)
+npm i @uneeverse/unee       # browser and Node.js (WebGPU, WASM or CPU)
 ollama run uneeverse/unee   # chat in a terminal
 ```
 
@@ -396,7 +396,7 @@ unee.strict_report  # what the check did to each sentence
 ## In the browser or Node.js
 
 ```js
-import { Unee } from "unee";
+import { Unee } from "@uneeverse/unee";
 const unee = await Unee.load("uneeverse/unee-0.8b", { device: "webgpu" });
 const res = await unee.decide({ state: "...", questions: { spam: { type: "noul", instructions: "Is this spam?" } } });
 for await (const piece of unee.stream([{ role: "user", content: "Write a haiku about tea." }])) console.log(piece);

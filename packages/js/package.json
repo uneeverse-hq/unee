@@ -1,5 +1,5 @@
 {
-  "name": "unee",
+  "name": "@uneeverse/unee",
   "version": "0.3.0",
   "description": "Unee by UNEEVERSE: a small open AI model that makes decisions and streams chat answers from your own knowledge, in the browser or Node. No server, no API key.",
   "author": "Muneef Mumthas",
@@ -15,6 +15,7 @@
   },
   "files": ["src", "NOTICE"],
   "license": "Apache-2.0",
+  "publishConfig": { "access": "public" },
   "peerDependencies": {
     "@huggingface/transformers": ">=3.7.0"
   },

@@ -1,4 +1,4 @@
-# unee
+# @uneeverse/unee
 
 **Unee, from UNEEVERSE, by Muneef Mumthas.** A small open AI model that runs inside your web app or Node.js service: no server, no API key, no cost per call.
 
@@ -7,11 +7,11 @@
 - **Summaries** of long email, chat and call threads.
 
 ```bash
-npm i unee @huggingface/transformers
+npm i @uneeverse/unee @huggingface/transformers
 ```
 
 ```js
-import { Unee } from "unee";
+import { Unee } from "@uneeverse/unee";
 
 // Browser: WebGPU (recent Chrome, Edge, Safari 26+, Firefox 141+). Node.js: { device: "cpu" }.
 const unee = await Unee.load("uneeverse/unee-0.8b");
